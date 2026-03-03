@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ค้นหารุ่นรถ - HONDA</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/boostrap.custom.min.css?v=o3dTRgYvwKnm7b1ymso_h25e8EM1QCmeD16rA8FKSHw" />
+    <link rel="stylesheet" href="css/PSSRetail.min.css?v=OHYQEktyXVNBm50uRG7hvYAXuq1slaIm1ph0X1PBgKY" />
+    <style>
+        body { padding-top: 70px; }
+        .search-box {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .model-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .model-item:hover {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .model-item.selected {
+            background-color: #d9230f;
+            color: white;
+            border-color: #d9230f;
+        }
+        .search-result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            display: none;
+        }
+        .logo-honda {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-honda img {
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-responsive" style="height:3rem;" src="Images/Logo.png" alt="HONDA">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cart/CartView.html"><i class="fas fa-shopping-basket"></i> ตะกร้า</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="logo-honda">
+            <img src="Images/Logo.png" alt="HONDA Logo">
+        </div>
+
+        <div class="search-box bg-white">
+            <h3 class="text-center text-primary mb-4">
+                <i class="fas fa-motorcycle"></i> ค้นหาจากรุ่นรถ
+            </h3>
+            
+            <div class="form-group">
+                <label for="brandSelect"><strong>แบรนด์</strong></label>
+                <select class="form-control" id="brandSelect">
+                    <option value="00001">HONDA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="modelSearch"><strong>เลือกรุ่นรถ</strong></label>
+                <input type="text" class="form-control" id="modelSearch" placeholder="พิมพ์ค้นหารุ่นรถ...">
+            </div>
+
+            <div class="form-group">
+                <label><strong>หรือเลือกรายการ:</strong></label>
+                <div class="model-grid" id="modelGrid"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="modelSelect"><strong>รุ่นที่เลือก:</strong></label>
+                <select class="form-control" id="modelSelect" size="5">
+                    <option value="00000">-- เลือกรุ่นรถ --</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary btn-block btn-lg font-weight-bold" onclick="searchParts()">
+                <i class="fas fa-search"></i> ค้นหา
+            </button>
+
+            <div class="search-result" id="searchResult">
+                <h4 class="text-success"><i class="fas fa-check-circle"></i> ค้นหา: <span id="selectedModelName"></span></h4>
+                <p>กำลังแสดงรายการอะไหล่สำหรับรุ่นนี้...</p>
+                <a href="Cart.html" class="btn btn-success btn-block">
+                    <i class="fas fa-shopping-cart"></i> ไปที่ตะกร้าสินค้า
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <h5 class="text-primary">ทั้งหมด ทุกรุ่นรถ HONDA</h5>
+            <p class="text-muted">เลือกรุ่นรถของคุณเพื่อดูอะไหล่ที่เหมาะสม</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        // ข้อมูลรุ่นรถ HONDA ทั้งหมด
+        const hondaModels = [
+            {value: "00068", name: "ADV150"},
+            {value: "00079", name: "ADV160"},
+            {value: "00077", name: "ADV350"},
+            {value: "00001", name: "AIR BLADE"},
+            {value: "00002", name: "AIR BLADE-i"},
+            {value: "00082", name: "C125"},
+            {value: "00004", name: "CB150R"},
+            {value: "00014", name: "CB300FA"},
+            {value: "00003", name: "CB300R"},
+            {value: "00005", name: "CBR150R"},
+            {value: "00007", name: "CBR250R"},
+            {value: "00067", name: "CBR250RR"},
+            {value: "00008", name: "CBR300R"},
+            {value: "00080", name: "CL300"},
+            {value: "00015", name: "CLICK110"},
+            {value: "00016", name: "CLICK110i"},
+            {value: "00017", name: "CLICK125i"},
+            {value: "00066", name: "CLICK150i"},
+            {value: "00078", name: "CLICK160"},
+            {value: "00019", name: "CRF250L"},
+            {value: "00018", name: "CRF250M"},
+            {value: "00072", name: "CRF300L"},
+            {value: "00070", name: "CT125"},
+            {value: "00020", name: "CZ-i"},
+            {value: "00024", name: "DREAM110i"},
+            {value: "00025", name: "DREAM125"},
+            {value: "00026", name: "FORZA300"},
+            {value: "00071", name: "FORZA350"},
+            {value: "00081", name: "Giorno Plus"},
+            {value: "00027", name: "ICON"},
+            {value: "00076", name: "LEAD125"},
+            {value: "00028", name: "MOOVE"},
+            {value: "00029", name: "MSX125"},
+            {value: "00074", name: "MSX GROM"},
+            {value: "00030", name: "PCX125"},
+            {value: "00031", name: "PCX150"},
+            {value: "00073", name: "PCX160"},
+            {value: "00033", name: "PHANTOM200"},
+            {value: "00034", name: "REBEL300"},
+            {value: "00075", name: "SCOOPY"},
+            {value: "00036", name: "SCOOPY-i"},
+            {value: "00037", name: "SONIC125"},
+            {value: "00038", name: "SPACY-i"},
+            {value: "00023", name: "SUPER CUB"},
+            {value: "00039", name: "WAVE100X"},
+            {value: "00040", name: "WAVE100Z"},
+            {value: "00041", name: "WAVE110i"},
+            {value: "00042", name: "WAVE110i AT"},
+            {value: "00046", name: "WAVE125"},
+            {value: "00044", name: "WAVE125i"},
+            {value: "00045", name: "WAVE125R"},
+            {value: "00047", name: "WAVE125S"},
+            {value: "00048", name: "WAVE125X"},
+            {value: "00049", name: "ZOOMER-X"}
+        ];
+
+        let selectedModel = null;
+
+        $(document).ready(function() {
+            // สร้าง grid รุ่นรถ
+            const modelGrid = $('#modelGrid');
+            hondaModels.forEach(model => {
+                const div = $('<div class="model-item">').text(model.name);
+                div.click(function() {
+                    selectModel(model);
+                });
+                modelGrid.append(div);
+            });
+
+            // ค้นหาแบบ real-time
+            $('#modelSearch').on('input', function() {
+                const searchTerm = $(this).val().toLowerCase();
+                $('.model-item').each(function() {
+                    const modelName = $(this).text().toLowerCase();
+                    $(this).toggle(modelName.includes(searchTerm));
+                });
+            });
+
+            // เมื่อเปลี่ยน select
+            $('#modelSelect').change(function() {
+                const value = $(this).val();
+                if (value !== "00000") {
+                    const model = hondaModels.find(m => m.value === value);
+                    if (model) selectModel(model);
+                }
+            });
+        });
+
+        function selectModel(model) {
+            selectedModel = model;
+            
+            // Highlight ใน grid
+            $('.model-item').removeClass('selected');
+            $('.model-item').filter(function() {
+                return $(this).text() === model.name;
+            }).addClass('selected');
+
+            // เลือกใน dropdown
+            $('#modelSelect').val(model.value);
+            
+            // เลื่อนไปดูผลลัพธ์
+            $('html, body').animate({
+                scrollTop: $('#searchResult').offset().top - 100
+            }, 300);
+        }
+
+        function searchParts() {
+            if (!selectedModel) {
+                alert('กรุณาเลือกรุ่นรถ');
+                return;
+            }
+            
+            $('#selectedModelName').text(selectedModel.name);
+            $('#searchResult').fadeIn();
+            
+            // เก็บข้อมูลไว้ใช้
+            localStorage.setItem('selectedModel', JSON.stringify(selectedModel));
+        }
+    </script>
+</body>
+</html>
