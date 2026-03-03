@@ -1,0 +1,538 @@
+
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สมัครสมาชิก</title>
+    <meta name="description" lang="th" content="ศูนย์ฮอนด้า สุภรัตน์มอเตอร์ จำหน่ายอะไหล่แท้ฮอนด้าทุกรุ่น" />
+    <meta name="description" lang="en" content="Genuine Honda spare parts from an authorized Thai Honda dealer." />
+
+
+    
+    
+        <link rel="stylesheet" href="/pssretail/css/boostrap.custom.min.css?v=o3dTRgYvwKnm7b1ymso_h25e8EM1QCmeD16rA8FKSHw" />
+    
+
+
+
+
+    <link rel="stylesheet" href="/pssretail/lib/font-awesome/css/all.min.css" />
+
+
+        <link rel="stylesheet" href="/pssretail/lib/ej2-datepicker-grid/23.2.5/styles/bootstrap4.min.css?v=5xXNdRlNBozWuaIIHhhqbj1OwjdZJO4E5ElRnyFtHP8" />
+        <script src="/pssretail/lib/ej2-datepicker-grid/23.2.5/scripts/ej2.datepicker.grid.min.js?v=TKRCNyLzXtx-j8qHQXQO9maKTDjHh6XUSqLjBRgfGfE"></script>
+    <link rel="stylesheet" href="/pssretail/css/PSSRetail.min.css?v=OHYQEktyXVNBm50uRG7hvYAXuq1slaIm1ph0X1PBgKY" />
+    <link href="https://www.suparat.net/pssretail/Images/SM-05.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <link rel="apple-touch-icon" href="https://www.suparat.net/pssretail/Images/SM-192x192Pixel.png">
+    <link rel="icon" type="image/png" href="https://www.suparat.net/pssretail/Images/SM-32x32Pixel.png">
+    <link rel="shortcut icon" href="https://www.suparat.net/pssretail/Images/SM-32x32Pixel.png">
+        <link rel="stylesheet" href="/pssretail/lib/vanilla-cookieconsent/dist/cookieconsent.min.css?v=DebuzSS8brgJ2WTdNwFgRG_khZF6hYvLM7mm5A_TgOo">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETPX2GBXEX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-ETPX2GBXEX');
+        </script>
+</head>
+
+
+<body>
+    <script type="text/javascript">
+        var BASEURL = "/pssretail";
+        var CURRENT_LANG = "th";
+    </script>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg border-bottom box-shadow fixed-top">
+            <a class="navbar-brand" href="/pssretail"><img class="img-responsive image-logo-dt" style="height:3rem;" src="/pssretail/Images/Logo.png"></a>
+            <button class="navbar-toggler mr-auto  order-1" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse  order-3 order-lg-2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pssretail"><i class="fas fa-home fa-1x"></i>  หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pssretail/Cart"><i class="fas fa-shopping-basket fa-1x"></i>  เลือกสินค้า</a>
+                    </li>
+
+                </ul>
+
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-lg-block" href="/pssretail/Auth/Login"><i class="fas fa-sign-in-alt"></i>  เข้าสู่ระบบ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pssretail/Register">  สมัครสมาชิก</a>
+                        </li>
+                        
+
+
+
+<li class="nav-item dropdown">
+        <a href="#" class="dropdown-toggle nav-link" id="langSelect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-globe"></i>
+            th<span class="caret"></span>
+        </a>
+        <div class="dropdown-menu bg-dark text-light">
+            <!-- Dropdown menu links -->
+                <a class="dropdown-item text-light" href="/pssretail/Home/SetLanguage?returnUrl=%2Fpssretail%2FRegister&amp;culture=th">&#xE44;&#xE17;&#xE22;</a>
+                <a class="dropdown-item text-light" href="/pssretail/Home/SetLanguage?returnUrl=%2Fpssretail%2FRegister&amp;culture=en">English</a>
+        </div>
+</li>
+
+                    </ul>
+            </div>
+
+
+            <ul class="navbar-nav  order-2 order-lg-3 flex-row align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none px-3" href="/pssretail/Auth/Login"><i class="fas fa-sign-in-alt"></i>  เข้าสู่ระบบ</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="position:relative;" href="/pssretail/Cart/CartView">
+                        <i class="fas fa-shopping-basket fa-2x"></i>
+                        <span id="baggeTemp" class="badge badge-primary"></span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <div style="padding-top:60px;">
+        <main role="main" class="pb-3">
+
+            <style>
+    .g-recaptcha {
+        display:flex;
+    }
+</style>
+
+<div class="form-row mr-4 ml-4">
+    <div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item"><a href="/pssretail">  หน้าหลัก </a></li>
+                <li class="breadcrumb-item active" aria-current="page">  สมัครสมาชิก</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<div class="form-row  mr-4 ml-4 mb-2 justify-content-center">
+    <div class="col-12">
+        
+    </div>
+</div>
+<h3 class="form-row section-title justify-content-center mr-4 ml-4 pb-2 border-primary" style="border-bottom:2px solid;"> <i class="far fa-registered pr-2 pt-1" aria-hidden="true"></i><b> สมัครสมาชิก</b>  </h3>
+
+<form id="FormRegister" method="post" action="/pssretail/Register/Register">
+
+    <div class="form-row  mr-4 ml-4 mb-2 justify-content-center">
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="EMAIL">&#xE2D;&#xE35;&#xE40;&#xE21;&#xE25;</label> <span class="text-danger"><b>*</b></span>
+            <input class="form-control form-control-sm" type="text" data-val="true" data-val-length="The field &#xE2D;&#xE35;&#xE40;&#xE21;&#xE25; must be a string with a maximum length of 120." data-val-length-max="120" data-val-regex="&#xE23;&#xE39;&#xE1B;&#xE41;&#xE1A;&#xE1A; &#xE2D;&#xE35;&#xE40;&#xE21;&#xE25; &#xE44;&#xE21;&#xE48;&#xE16;&#xE39;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;" data-val-regex-pattern="^([a-zA-Z0-9_\.\-])&#x2B;\@(([a-zA-Z0-9\-])&#x2B;\.)&#x2B;([a-zA-Z0-9]{2,4})&#x2B;$" data-val-required="&#xE42;&#xE1B;&#xE23;&#xE14;&#xE23;&#xE30;&#xE1A;&#xE38;  &#xE2D;&#xE35;&#xE40;&#xE21;&#xE25;" id="EMAIL" maxlength="120" name="EMAIL" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="EMAIL" data-valmsg-replace="true"></span>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="MOBILE_NO">&#xE40;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE21;&#xE37;&#xE2D;&#xE16;&#xE37;&#xE2D;</label> <span class="text-danger"><b>*</b></span>
+            <input class="form-control form-control-sm" type="text" data-val="true" data-val-length="The field &#xE40;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE21;&#xE37;&#xE2D;&#xE16;&#xE37;&#xE2D; must be a string with a maximum length of 40." data-val-length-max="40" data-val-regex="&#xE23;&#xE39;&#xE1B;&#xE41;&#xE1A;&#xE1A; &#xE40;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE21;&#xE37;&#xE2D;&#xE16;&#xE37;&#xE2D; &#xE44;&#xE21;&#xE48;&#xE16;&#xE39;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;" data-val-regex-pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" data-val-required="&#xE42;&#xE1B;&#xE23;&#xE14;&#xE23;&#xE30;&#xE1A;&#xE38;  &#xE40;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE21;&#xE37;&#xE2D;&#xE16;&#xE37;&#xE2D;" id="MOBILE_NO" maxlength="40" name="MOBILE_NO" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="MOBILE_NO" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+    <div class="form-row  mr-4 ml-4 mb-2 justify-content-center">
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="PASSWORDS">&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;</label> <span class="text-danger"><b>*</b></span>
+            <input type="password" class="form-control form-control-sm" data-val="true" data-val-length="&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE04;&#xE27;&#xE32;&#xE21;&#xE22;&#xE32;&#xE27; 6 &#xE16;&#xE36;&#xE07; 20 &#xE15;&#xE31;&#xE27;&#xE2D;&#xE31;&#xE01;&#xE29;&#xE23; &#xE21;&#xE35;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE31;&#xE01;&#xE29;&#xE23; A-Z,a-z &#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE19;&#xE49;&#xE2D;&#xE22; 1 &#xE15;&#xE31;&#xE27;&#xE41;&#xE25;&#xE30;&#xE15;&#xE31;&#xE27;&#xE40;&#xE25;&#xE02;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE19;&#xE49;&#xE2D;&#xE22; 1 &#xE15;&#xE31;&#xE27;" data-val-length-max="20" data-val-length-min="6" data-val-regex="&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE04;&#xE27;&#xE32;&#xE21;&#xE22;&#xE32;&#xE27; 6 &#xE16;&#xE36;&#xE07; 20 &#xE15;&#xE31;&#xE27;&#xE2D;&#xE31;&#xE01;&#xE29;&#xE23; &#xE21;&#xE35;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE31;&#xE01;&#xE29;&#xE23; A-Z,a-z &#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE19;&#xE49;&#xE2D;&#xE22; 1 &#xE15;&#xE31;&#xE27;&#xE41;&#xE25;&#xE30;&#xE15;&#xE31;&#xE27;&#xE40;&#xE25;&#xE02;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE19;&#xE49;&#xE2D;&#xE22; 1 &#xE15;&#xE31;&#xE27;" data-val-regex-pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,20}$" data-val-required="&#xE42;&#xE1B;&#xE23;&#xE14;&#xE23;&#xE30;&#xE1A;&#xE38;  &#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;" id="PASSWORDS" maxlength="20" name="PASSWORDS" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="PASSWORDS" data-valmsg-replace="true"></span>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="CONFIRM_PASSWORD">&#xE22;&#xE37;&#xE19;&#xE22;&#xE31;&#xE19;&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;</label> <span class="text-danger"><b>*</b></span>
+            <input type="password" class="form-control form-control-sm" data-val="true" data-val-is="&#xE22;&#xE37;&#xE19;&#xE22;&#xE31;&#xE19;&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE44;&#xE21;&#xE48;&#xE16;&#xE39;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;" data-val-is-datatype="String" data-val-is-dependentproperty="PASSWORDS" data-val-is-operator="EqualTo" data-val-is-passonnull="false" data-val-length="&#xE22;&#xE37;&#xE19;&#xE22;&#xE31;&#xE19;&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE44;&#xE21;&#xE48;&#xE16;&#xE39;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;" data-val-length-max="20" data-val-length-min="6" data-val-required="&#xE42;&#xE1B;&#xE23;&#xE14;&#xE22;&#xE37;&#xE19;&#xE22;&#xE31;&#xE19;&#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1C;&#xE48;&#xE32;&#xE19;" id="CONFIRM_PASSWORD" maxlength="20" name="CONFIRM_PASSWORD" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="CONFIRM_PASSWORD" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+    <div class="form-row  mr-4 ml-4 mb-2 justify-content-center">
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="FIRSTNAME">&#xE0A;&#xE37;&#xE48;&#xE2D;</label> <span class="text-danger"><b>*</b></span>
+            <input class="form-control form-control-sm" type="text" data-val="true" data-val-length="The field &#xE0A;&#xE37;&#xE48;&#xE2D; must be a string with a maximum length of 60." data-val-length-max="60" data-val-required="&#xE42;&#xE1B;&#xE23;&#xE14;&#xE23;&#xE30;&#xE1A;&#xE38;  &#xE0A;&#xE37;&#xE48;&#xE2D;" id="FIRSTNAME" maxlength="60" name="FIRSTNAME" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="FIRSTNAME" data-valmsg-replace="true"></span>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="LASTNAME">&#xE19;&#xE32;&#xE21;&#xE2A;&#xE01;&#xE38;&#xE25;</label>
+            <input class="form-control form-control-sm" type="text" data-val="true" data-val-length="The field &#xE19;&#xE32;&#xE21;&#xE2A;&#xE01;&#xE38;&#xE25; must be a string with a maximum length of 60." data-val-length-max="60" id="LASTNAME" maxlength="60" name="LASTNAME" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="LASTNAME" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+  
+    <div class="form-row  mr-4 ml-4 mb-2 justify-content-center">
+        <div class="col-12 col-md-5 col-lg-3 mb-2">
+            <label class="control-label" for="LINE_ID">&#xE44;&#xE25;&#xE19;&#xE4C;&#xE44;&#xE2D;&#xE14;&#xE35;</label>
+            <input class="form-control form-control-sm" type="text" data-val="true" data-val-length="The field &#xE44;&#xE25;&#xE19;&#xE4C;&#xE44;&#xE2D;&#xE14;&#xE35; must be a string with a maximum length of 50." data-val-length-max="50" id="LINE_ID" maxlength="50" name="LINE_ID" value="" />
+            <span class="text-danger field-validation-valid" data-valmsg-for="LINE_ID" data-valmsg-replace="true"></span>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3">
+            <label class="control-label" for="REFENRAL_ID">&#xE23;&#xE39;&#xE49;&#xE08;&#xE31;&#xE01;&#xE40;&#xE23;&#xE32;&#xE08;&#xE32;&#xE01;&#xE17;&#xE35;&#xE48;&#xE44;&#xE2B;&#xE19;</label>
+            <select class="form-control form-control-sm" data-val="true" data-val-required="The &#xE23;&#xE39;&#xE49;&#xE08;&#xE31;&#xE01;&#xE40;&#xE23;&#xE32;&#xE08;&#xE32;&#xE01;&#xE17;&#xE35;&#xE48;&#xE44;&#xE2B;&#xE19; field is required." id="REFENRAL_ID" name="REFENRAL_ID"><option value="1">&#xE44;&#xE21;&#xE48;&#xE23;&#xE30;&#xE1A;&#xE38;</option>
+<option value="2">Shopee</option>
+</select>
+
+        </div>
+    </div>
+    <div class="form-row  mr-4 ml-4 mb-2">
+        <input type="hidden" data-val="true" data-val-required="&#xE42;&#xE1B;&#xE23;&#xE14;&#xE01;&#xE14;&#xE22;&#xE37;&#xE19;&#xE22;&#xE31;&#xE19; I&#x27;m not a robot" id="CaptchaToken" name="CaptchaToken" value="" />
+        
+        <div class="col-12 text-center d-flex justify-content-center">
+            <div class="g-recaptcha" data-sitekey="6Lfy7z0rAAAAAOzEqzCoTMmC2MXtR6Z-m5TTA6Rh" data-callback="CaptchaCallback" data-expired-callback="CaptchaTimeoutCallback"></div>
+        </div>
+        <div class="col-12 text-center d-flex justify-content-center">
+            <span id="requireCaptcha" class="text-danger" style="display:none;" >โปรดยืนยันตัวตัวตนด้วย CAPTCHA</span>
+        </div>
+    </div>  
+
+    <div class="form-row mr-4 ml-4 justify-content-center mt-3  mr-4 ml-4">
+        <div class="col-6 col-md-5 col-lg-3">
+            <button type="button" id="BtnSubmitRegister" class="btn btn-primary btn-block"><i class="far fa-registered"></i> สมัครสมาชิก</button>
+        </div>
+    </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8IFDXV22wQ1LtoZl_sGHOtn44ml8CxtgE5_lVY-wusIrt-em3Izcc90rXd198Ne0p0afVjY3eSTWALIB_mdRS_Rc4JXzXrz_o_83fcjOdSs8HVSBvbqZri0rlqjLGHzEerrNSaRRgeRG1jjevBAx1aU" /></form>
+
+
+
+
+
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionResultModal" tabindex="-1" role="dialog" aria-labelledby="actionSuccessModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionResultModal_icon" class="fa far fa-check-circle text-primary fa-3x my-3"></i>
+                        <h5 id="actionResultModal_message" class="my-3">เพิ่มสินค้าลงในรถเข็นแล้ว</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionEmptyPartNoModal" tabindex="-1" role="dialog" aria-labelledby="actionEmptyPartNoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionEmptyPartNoModal_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actionEmptyPartNoModal_message" class="my-3">ไม่พบรหัสสินค้านี้</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionNotReadyPartNoModal" tabindex="-1" role="dialog" aria-labelledby="actionNotReadyPartNoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionNotReadyPartNoModal_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actionNotReadyPartNoModal_message1" class="my-3">สินค้านี้ยังไม่มีราคาขาย</h5>
+                        <h5 id="actionNotReadyPartNoModal_message2" class="my-3">บริษัทจะติดตามและแจ้งให้ท่านทราบโดยเร็ว</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionPartDiscontinuedModal" tabindex="-1" role="dialog" aria-labelledby="actionPartDiscontinuedModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actPartDiscontinued_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actPartDiscontinued_message1" class="my-3">สินค้าเลิกผลิต</h5>
+                        <h5 id="actPartDiscontinued_message2" class="my-3">ติดต่อสอบถาม โทร. 0 2881 9292 (-8)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionWaitforLongModal" tabindex="-1" role="dialog" aria-labelledby="actionPartDiscontinuedModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:650px !important">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionWaitforLongModal_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actionWaitforLongModal_message1" class="my-3 text-center" style="justify-items:center"></h5>
+                        <h5 id="actionWaitforLongModal_message2" class="my-3">ติดต่อสอบถาม โทร. 0 2881 9292 (-8)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoadingModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-row justify-content-center">
+                        <div class="col-3 text-center" style="background:rgba(0, 0, 0, 0.00)" id="DivLoading">
+                            <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>  Loading...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="border-top footer">
+      
+            <div class="form-row mr-4 ml-4 mt-2">
+                <div class="col-12 col-md-2">
+                    <div class="col-12 font-weight-bold small text-wrap">บริษัท สุภรัตน์มอเตอร์ จำกัด </div>
+                    <div class="col-12 font-weight-bold small text-wrap">123, 125 ถนนสิรินธร แขวงบางบำหรุ เขตบางพลัด กรุงเทพมหานคร 10700</div>
+
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">การสั่งซื้อ </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Cart"> เลือกสินค้า </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Cart/CartView"> ตะกร้าสินค้า </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Receive/Payment">  แจ้งชำระเงิน </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">ลูกค้า</div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Customer/CustomerView">  ข้อมูลลูกค้า</a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Order/OrderList">  ใบสั่งซื้อ</a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Receive/ReceiveList">  ใบชำระเงิน</a>
+                    </div>
+                    <div class="col-12">
+                        <a id="cwc-link" class="cwc-banner-show-settings font-weight-bold small" href="#cwc-link"> ตั้งค่าคุกกี้</a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">คู่มือลูกค้า</div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" target="_blank" href="/pssretail/Help/Shopping"> วิธีการสั่งซื้อ</a>
+                    </div>
+                    <div class="col-12">
+                    <a class="font-weight-bold small" href="https://chat.suparat.net/hc/help/articles/1758957846-" target="_blank">วิธีการชำระเงิน</a>
+                    </div>
+                    <div class="col-12">
+                    <a class="font-weight-bold small" href="https://chat.suparat.net/hc/help/articles/1752927404-" target="_blank">วิธีติดตามการสั่งซื้อ</a>
+                    </div>
+                    <div class="col-12">
+                    <a class="font-weight-bold small" href="https://chat.suparat.net/hc/help/articles/1758960733-" target="_blank">
+                        วิธีการจัดส่งสินค้า</a>
+               
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">ติดต่อเรา</div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/ContactUs"> ติดต่อเรา</a>
+                    </div>
+                    <div class="col-12">
+                        <a href="https://www.facebook.com/SuparatMotor.co/?rf=517874958259179%2F" class="font-weight-bold">      <i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://line.me/R/ti/p/@suparat" class="font-weight-bold">   <i class="fab fa-line fa-2x"></i></a>
+                        <a class="font-weight-bold" href="/pssretail/ContactUs/ContactUs">   <i class="fas fa-paper-plane fa-2x"></i></a>
+
+                    </div>
+                    <div class="col-12"><i class="fas fa-phone-square-alt"></i> 0 2881 9292 (-8)</div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">เกี่ยวกับเรา</div>
+                    <div class="col-12">
+                        <a href="/pssretail/pdf/privacy.pdf" class="font-weight-bold small">   Privacy Policy</a>
+                    </div>
+                    <div class="col-12">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <a href='https://dbdregistered.dbd.go.th/api/public/shopinfo?param=88FC3029F2DD99B9B93E887468D2ED372C7820342AEC6A0AC150C29BEC8FEF51' target="_blank">
+                            <img class="img-fluid" src='https://dbdregistered.dbd.go.th/api/public/banner?param=88FC3029F2DD99B9B93E887468D2ED372C7820342AEC6A0AC150C29BEC8FEF51' />
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+     
+
+
+        <div class="text-center">
+            <p class="mt-1 mb-0 text-center text-wrap font-weight-bold small">
+                © Copyright 2024 Suparat Motor Corp.,Ltd. (All Rights Reserved)
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="/pssretail/lib/jquery/jquery.min.js?v=82hEkGrSMJh3quMSG4f7FbngmAPLTDM63H4eNayS4Us"></script>
+    <script src="/pssretail/lib/bootstrap/dist/js/bootstrap.bundle.min.js?v=fBcjCr42EZAu4qYONwCHEKDCJ1bvGCHWC9fY-kGXIsE"></script>
+
+    <script src="/pssretail/js/Layout/Layout.js?v=hFoiii7GhcoBAKlvPggDiXB2RcY-HzfXiMRrcKXSZR4"></script>
+
+    <script src="/pssretail/lib/bs-custom-file-input/bs-custom-file-input.min.js?v=e0DUqNhsFAzOlhrWXnMOQwRoqrCRlofpWgyhnrIIaPo"></script>
+
+    <script>var Resources = {"Localization.SharedResource":{"WaitingforSalePrice":"\u0E23\u0E2D\u0E23\u0E32\u0E04\u0E32\u0E02\u0E32\u0E22","NoTransaction":"\u0E44\u0E21\u0E48\u0E21\u0E35\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C\u0E17\u0E33\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23","NotFindPro":"\u0E02\u0E2D\u0E2D\u0E20\u0E31\u0E22\u0E04\u0E48\u0E30 \u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E42\u0E1B\u0E23\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19","ContactUs":"\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E40\u0E23\u0E32","OrderList":"\u0E43\u0E1A\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","BuyNow":"\u0E0B\u0E37\u0E49\u0E2D\u0E40\u0E25\u0E22","NoData":"\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25","GeneralSpareParts":"\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48\u0E17\u0E31\u0E48\u0E27\u0E44\u0E1B","Logout":"\u0E2D\u0E2D\u0E01\u0E08\u0E32\u0E01\u0E23\u0E30\u0E1A\u0E1A","EnterPartName":"\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E0A\u0E37\u0E48\u0E2D\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48","DefaultAddress":"\u0E15\u0E31\u0E49\u0E07\u0E40\u0E1B\u0E47\u0E19\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19","Cookie Preferences":"\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E04\u0E38\u0E01\u0E01\u0E35\u0E49","PriceVat":"\u0E23\u0E32\u0E04\u0E32\u0E23\u0E27\u0E21\u0E20\u0E32\u0E29\u0E35\u0E21\u0E39\u0E25\u0E04\u0E48\u0E32\u0E40\u0E1E\u0E34\u0E48\u0E21","CartView":"\u0E15\u0E30\u0E01\u0E23\u0E49\u0E32\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32","Privacy":"Privacy Policy","ScanPromptpay":"\u0E2A\u0E41\u0E01\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19\u0E1C\u0E48\u0E32\u0E19 PromptPay","NotReadyPartNo2":"\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E08\u0E30\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E41\u0E25\u0E30\u0E41\u0E08\u0E49\u0E07\u0E43\u0E2B\u0E49\u0E17\u0E48\u0E32\u0E19\u0E17\u0E23\u0E32\u0E1A\u0E42\u0E14\u0E22\u0E40\u0E23\u0E47\u0E27","SelectParts":"\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48","ReceiveList":"\u0E43\u0E1A\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19","EditCustomer":"\u0E41\u0E01\u0E49\u0E44\u0E02\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32","mnOrderTracking":"\u0E27\u0E34\u0E18\u0E35\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","DeleteAll":"\u0E25\u0E1A\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14","Customerinfo":"\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32","Payment":"\u0E41\u0E08\u0E49\u0E07\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19","PleaseSelectModel":"\u0E01\u0E23\u0E38\u0E13\u0E32\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E23\u0E38\u0E48\u0E19","mnHowToPayment":"\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19","AddCartSuccess":"\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E25\u0E07\u0E43\u0E19\u0E23\u0E16\u0E40\u0E02\u0E47\u0E19\u0E41\u0E25\u0E49\u0E27","Promotion":"\u0E42\u0E1B\u0E23\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19","Fullname":"\u0E0A\u0E37\u0E48\u0E2D - \u0E19\u0E32\u0E21\u0E2A\u0E01\u0E38\u0E25","SearchPictures":"\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E23\u0E39\u0E1B","mnHowToOrder":"\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","ChangePassword":"\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19","mnHowToDelivery":"\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32","ShowOnlyModels":"\u0E41\u0E2A\u0E14\u0E07\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E23\u0E38\u0E48\u0E19","AddNewAddress":"\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E2B\u0E21\u0E48","Email":"\u0E2D\u0E35\u0E40\u0E21\u0E25","WaitingShippingCost":"\u0E23\u0E2D\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19","Admin":"\u0E1C\u0E39\u0E49\u0E14\u0E39\u0E41\u0E25\u0E23\u0E30\u0E1A\u0E1A","About":"\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E40\u0E23\u0E32","AskUs":"\u0E2A\u0E2D\u0E1A\u0E16\u0E32\u0E21","Order":"\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","Login":"\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A","Total":"\u0E22\u0E2D\u0E14\u0E23\u0E27\u0E21","PartsChangeOften":"\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E1A\u0E48\u0E2D\u0E22","Address":"\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48","AddCart":"\u0E43\u0E2A\u0E48\u0E15\u0E30\u0E01\u0E23\u0E49\u0E32","CaptchaRequired":"\u0E42\u0E1B\u0E23\u0E14\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E15\u0E31\u0E27\u0E15\u0E31\u0E27\u0E15\u0E19\u0E14\u0E49\u0E27\u0E22 CAPTCHA","PartsPromotion":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E42\u0E1B\u0E23\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19","Notifications":"\u0E41\u0E08\u0E49\u0E07\u0E40\u0E15\u0E37\u0E2D\u0E19","SystemError":"\u0E40\u0E01\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E02\u0E2D\u0E07\u0E23\u0E30\u0E1A\u0E1A \u0E01\u0E23\u0E38\u0E13\u0E32\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E21\u0E48\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07","SearchPictureStr":"\u0E41\u0E2A\u0E14\u0E07\u0E23\u0E39\u0E1B\u0E20\u0E32\u0E1E\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E04\u0E33\u0E04\u0E49\u0E19\u0E2B\u0E32 ","Register":"\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01","NotReadyPartNo":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E19\u0E35\u0E49\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E35\u0E23\u0E32\u0E04\u0E32\u0E02\u0E32\u0E22","ModelTel":"\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E2A\u0E2D\u0E1A\u0E16\u0E32\u0E21 \u0E42\u0E17\u0E23. 0 2881 9292 (-8)","EmptyPartsno":"\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E19\u0E35\u0E49","BestSeller":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E02\u0E32\u0E22\u0E14\u0E35","SaveData":"\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25","CancellationReason":"\u0E2A\u0E32\u0E40\u0E2B\u0E15\u0E38\u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01","ShowAllPics":"\u0E41\u0E2A\u0E14\u0E07\u0E23\u0E39\u0E1B\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14","mnHowToPaymentInformed":"\u0E27\u0E34\u0E18\u0E35\u0E41\u0E08\u0E49\u0E07\u0E01\u0E32\u0E23\u0E42\u0E2D\u0E19\u0E40\u0E07\u0E34\u0E19","EditAddress":"\u0E41\u0E01\u0E49\u0E44\u0E02\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48","AlertTaxBranchNo":"\u0E2A\u0E33\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E43\u0E2B\u0E0D\u0E48 = 00000 \u0E16\u0E49\u0E32\u0E2A\u0E32\u0E02\u0E32\u0E43\u0E2B\u0E49\u0E23\u0E30\u0E1A\u0E38\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E08\u0E14\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19","PartDiscontinued":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E40\u0E25\u0E34\u0E01\u0E1C\u0E25\u0E34\u0E15","mnCustomerGuide":"\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32","ApplyDiscount":"\u0E04\u0E33\u0E19\u0E27\u0E13\u0E2A\u0E48\u0E27\u0E19\u0E25\u0E14(%)","ChatByWeb":"\u0E41\u0E0A\u0E17\u0E17\u0E32\u0E07\u0E40\u0E27\u0E47\u0E1A","ChatByLine":"\u0E41\u0E0A\u0E17\u0E17\u0E32\u0E07 Line","Baht":"\u0E1A\u0E32\u0E17","Cart":"\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32","Home":"\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E25\u0E31\u0E01","Year":"\u0E1B\u0E35","ColorStickerSet":"\u0E0A\u0E38\u0E14\u0E2A\u0E35/\u0E2A\u0E15\u0E34\u0E4A\u0E01\u0E40\u0E01\u0E2D\u0E23\u0E4C"}};</script>
+
+    
+            <div class="floating-menu ">
+                <span class="plus-icon">
+                    <span class="close">
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <span class="open">
+                            <i class="fa fa-comment pr-1" aria-hidden="true"></i>
+                                สอบถาม
+                    </span> 
+                </span>
+                <ul class="floating-nav">
+                    <li class="chat-by-line">
+                         แชททาง Line
+                    </li>
+                    <li class="chat-by-web">
+                        <i class="fa fa-comment mr-1"></i> แชททางเว็บ
+                    </li>
+                </ul>
+
+            </div>
+<script>
+
+
+
+
+    let cwMail = "";
+    let cwMobile = "";
+    let cwName = "";
+    let cwHash = "";
+    
+
+
+            window.chatwootSettings = {
+                hideMessageBubble: true,
+                position: 'right', // This can be left or right
+                locale: 'th', // Language to be set
+                type: 'expanded_bubble', // [standard, expanded_bubble]
+                launcherTitle: 'Chat'
+            };
+
+            window.addEventListener('chatwoot:ready', function () {
+                $("#logoutLink").on("click", function () {
+                    window.$chatwoot.reset();
+                });
+
+                if (cwMail !== "") {
+                    window.$chatwoot.setUser(cwMail, {
+                        name: cwName, // Name of the user
+                        email: cwMail, // Email of the user                       
+                        phone_number: "+66" + cwMobile, // Phone Number of the user
+                        identifier_hash: cwHash
+                    })
+                }
+
+    
+            });
+
+
+          (function(d,t) {
+              var BASE_URL = 'https://chat.suparat.net';
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+              window.chatwootSDK.run({
+                websiteToken: 'Qw7HBV9QsYfWP4kNqfh9Pwyu',
+                  baseUrl: BASE_URL
+              })
+            }
+            })(document, "script");
+ 
+
+   $(document).ready(function() {
+      $(".plus-icon").click(function() {
+        $(".floating-menu").toggleClass("active"); 
+      });
+
+       $(".chat-by-line").click(function () {
+           location.href = "https://line.me/R/ti/p/@suparat";
+           $(".floating-menu").toggleClass("active"); 
+       });
+
+       $(".chat-by-web").click(function () {
+           window.$chatwoot.toggle("open");
+           $(".floating-menu").toggleClass("active"); 
+       });
+
+    });
+</script>
+
+
+    
+    <script>
+
+        function CaptchaCallback(token) {
+            $("#CaptchaToken").val(token);
+            $("#requireCaptcha").hide();
+        }
+
+        function CaptchaTimeoutCallback() {
+            $("#CaptchaToken").val("");
+        }
+     </script>
+<script src="/pssretail/lib/jquery-validation/jquery.validate.min.js"></script>
+<script src="/pssretail/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/pssretail/js/Scc/FormHelper.js?v=NwaNT625LegGyF72tRnpnKS7-VQhi96UBkRWqyeDE-4"></script>
+    <script src="/pssretail/js/Scc/SccLoadingModal.js?v=bAen5ZNG3HUF3Cuo-r1YHP_4g3Bgq7Hsm-Hs4g2QQuE"></script>
+    <script src="/pssretail/js/Register/Register.js?v=5xHVO0pfPLWHAEWr4kA3ddBSoh-2rgvpbLx43P3S1Ac"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+        <!-- Syncfusion Essential JS 2 ScriptManager -->
+        <script>window.syncfusion={isLicValidated:true};</script>
+
+
+        <script type="module" src="/pssretail/js/cookieconsent-config.js?v=vF0a9ot_5yB-tEtTOnJvug7BViWD6tWuuJuqM3YckeI"></script>
+        <script>
+        document.getElementById("cwc-link").addEventListener("click", function() {
+            CookieConsent.showPreferences();
+        });
+        </script>
+
+</body>
+</html>

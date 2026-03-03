@@ -1,0 +1,1843 @@
+
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เลือกสินค้า</title>
+    <meta name="description" lang="th" content="ศูนย์ฮอนด้า สุภรัตน์มอเตอร์ จำหน่ายอะไหล่แท้ฮอนด้าทุกรุ่น" />
+    <meta name="description" lang="en" content="Genuine Honda spare parts from an authorized Thai Honda dealer." />
+
+
+    
+    
+        <link rel="stylesheet" href="/pssretail/css/boostrap.custom.min.css?v=o3dTRgYvwKnm7b1ymso_h25e8EM1QCmeD16rA8FKSHw" />
+    
+
+
+
+
+    <link rel="stylesheet" href="/pssretail/lib/font-awesome/css/all.min.css" />
+
+
+        <link rel="stylesheet" href="/pssretail/lib/ej2-datepicker-grid/23.2.5/styles/bootstrap4.min.css?v=5xXNdRlNBozWuaIIHhhqbj1OwjdZJO4E5ElRnyFtHP8" />
+        <script src="/pssretail/lib/ej2-datepicker-grid/23.2.5/scripts/ej2.datepicker.grid.min.js?v=TKRCNyLzXtx-j8qHQXQO9maKTDjHh6XUSqLjBRgfGfE"></script>
+    <link rel="stylesheet" href="/pssretail/css/PSSRetail.min.css?v=OHYQEktyXVNBm50uRG7hvYAXuq1slaIm1ph0X1PBgKY" />
+    <link href="https://www.suparat.net/pssretail/Images/SM-05.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <link rel="apple-touch-icon" href="https://www.suparat.net/pssretail/Images/SM-192x192Pixel.png">
+    <link rel="icon" type="image/png" href="https://www.suparat.net/pssretail/Images/SM-32x32Pixel.png">
+    <link rel="shortcut icon" href="https://www.suparat.net/pssretail/Images/SM-32x32Pixel.png">
+        <link rel="stylesheet" href="/pssretail/lib/vanilla-cookieconsent/dist/cookieconsent.min.css?v=DebuzSS8brgJ2WTdNwFgRG_khZF6hYvLM7mm5A_TgOo">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETPX2GBXEX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-ETPX2GBXEX');
+        </script>
+</head>
+
+
+<body>
+    <script type="text/javascript">
+        var BASEURL = "/pssretail";
+        var CURRENT_LANG = "th";
+    </script>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg border-bottom box-shadow fixed-top">
+            <a class="navbar-brand" href="/pssretail"><img class="img-responsive image-logo-dt" style="height:3rem;" src="/pssretail/Images/Logo.png"></a>
+            <button class="navbar-toggler mr-auto  order-1" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse  order-3 order-lg-2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pssretail"><i class="fas fa-home fa-1x"></i>  หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pssretail/Cart"><i class="fas fa-shopping-basket fa-1x"></i>  เลือกสินค้า</a>
+                    </li>
+
+                </ul>
+
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-lg-block" href="/pssretail/Auth/Login"><i class="fas fa-sign-in-alt"></i>  เข้าสู่ระบบ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pssretail/Register">  สมัครสมาชิก</a>
+                        </li>
+                        
+
+
+
+<li class="nav-item dropdown">
+        <a href="#" class="dropdown-toggle nav-link" id="langSelect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-globe"></i>
+            th<span class="caret"></span>
+        </a>
+        <div class="dropdown-menu bg-dark text-light">
+            <!-- Dropdown menu links -->
+                <a class="dropdown-item text-light" href="/pssretail/Home/SetLanguage?returnUrl=%2Fpssretail%2FCart&amp;culture=th">&#xE44;&#xE17;&#xE22;</a>
+                <a class="dropdown-item text-light" href="/pssretail/Home/SetLanguage?returnUrl=%2Fpssretail%2FCart&amp;culture=en">English</a>
+        </div>
+</li>
+
+                    </ul>
+            </div>
+
+
+            <ul class="navbar-nav  order-2 order-lg-3 flex-row align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none px-3" href="/pssretail/Auth/Login"><i class="fas fa-sign-in-alt"></i>  เข้าสู่ระบบ</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="position:relative;" href="/pssretail/Cart/CartView">
+                        <i class="fas fa-shopping-basket fa-2x"></i>
+                        <span id="baggeTemp" class="badge badge-primary"></span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <div style="padding-top:60px;">
+        <main role="main" class="pb-3">
+
+            
+
+<form id="formCartItem" action="/pssretail/Order/CreateOrder" method="post">
+    <input type="hidden" id="PssProductId" name="PssProductId" value="" />
+    <input type="hidden" id="PssBrandId" name="PssBrandId" value="" />
+    <input type="hidden" id="PssModelId" name="PssModelId" value="" />
+    <input type="hidden" id="ModelLineNo" name="ModelLineNo" value="" />
+    <input type="hidden" id="PssPageNo" name="PssPageNo" value="" />
+    <input type="hidden" id="ColorLineNo" name="ColorLineNo" value="" />
+    <input type="hidden" id="PssModelName" name="PssModelName" value="" />
+    <input type="hidden" data-val="true" data-val-required="The SearchByParts field is required." id="SearchByParts" name="SearchByParts" value="0" />
+    <input type="hidden" data-val="true" data-val-number="The field DISCOUNT_PERCENT must be a number." data-val-required="The DISCOUNT_PERCENT field is required." id="DISCOUNT_PERCENT" name="DISCOUNT_PERCENT" value="0" />
+    <input type="hidden" data-val="true" data-val-number="The field DISCOUNT_AMOUNT must be a number." data-val-required="The DISCOUNT_AMOUNT field is required." id="DISCOUNT_AMOUNT" name="DISCOUNT_AMOUNT" value="0" />
+    <input type="hidden" id="CartDetail" name="CartDetail" value="System.Collections.Generic.List`1[PSSRetail.ViewModels.CartItemViewModel]" />
+    <input type="hidden" value="" id="newPartList" name="newPartList" />
+    <input type="hidden" id="catid" name="catid" value="1" />
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8IFDXV22wQ1LtoZl_sGHOtlPyvaxmF_DUVbNRqFa58sxG2q1LGrVrN5wmD7Oka5KKFkWUX-P13j0CABBJPZe8sdyz1jdSmn9U0F2NSz2JxIev1wVO_1NBv0zSyvjEpzZbNQv1EZyXDy9EZfP5XwMPns" /></form>
+
+<div class="form-row mx-2 mx-sm-4 mt-3">
+    <div class="col-12 col-lg-12 col-xl-6">
+        <ul id="tabsSlectProduct" class="nav nav-tabs mb-2">
+            <li class="nav-item" id="litab1"><a href="#TabModelPart" data-toggle="tab" class="nav-link text-uppercase active rem9"><b>ค้นหาจากรุ่นรถ</b></a></li>
+
+            <li class="nav-item" id="litab2"><a href="#TabPssPartList" data-toggle="tab" class="nav-link text-uppercase rem9"><b>ค้นหาอะไหล่ทั้งหมด</b></a></li>
+            <li class="nav-item" id="litab3"><a href="#TabAddPssPart" data-toggle="tab" class="nav-link text-uppercase rem9"><b>สั่งซื้อตามรหัสสินค้า</b></a></li>
+            <li class="nav-item" id="litab4"><a href="#TabPartsChangeOften" id="PartsChangeOften" data-toggle="tab" class="nav-link text-uppercase rem9 d-none"><b>อะไหล่ที่เปลี่ยนบ่อย</b></a></li>
+            <li class="nav-item" id="litab5"><a href="#TabPartsPromotion" id="PartsPromotion" data-toggle="tab" class="nav-link text-uppercase rem9 "><b>สินค้าโปรโมชั่น</b></a></li>
+        </ul>
+        <div id="DivTab" class="tab-content">
+            <div id="TabModelPart" class="tab-pane fade active show" tabindex="1">
+                <div class="card mb-3">
+                    <div class="card-body" id="ModelNotEmpty" style="display:none;">
+                        <div class="form-row mb-2">
+                            <div class="col-12 col-md-12 col-lg-9 mb-2" style="align-self:center;">
+                                <span>
+                                    <b>รุ่น : </b>
+                                    <b id="DisplayModelname"></b>
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 mb-2">
+                                <button type="button" id="btnOpenNav" class="btn btn-outline-secondary btn-block" formaction="/pssretail/Cart"> เปลี่ยนรุ่นรถ</button>
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col-12 col-md-12 col-lg-9 mb-2" style="align-self:center;">
+                                <span>
+                                    <b>รูปภาพ : </b>
+                                    <b id="DisplayModelPicName"></b>
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 mb-2">
+                                <button type="button" id="btnOpenNavPic" class="btn btn-outline-secondary btn-block" formaction="/pssretail/Cart"> เปลี่ยนรูปภาพ</button>
+                            </div>
+                        </div>
+                        <div class="form-row mb-2" id="DisPlayButtonColor">
+                            <div class="col-12 col-md-2 col-lg-2 mb-2" style="align-self:center;">
+                                <span>
+                                    <b>ชุดสี/สติ๊กเกอร์ : </b>
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-10 col-lg-10 mb-2">
+                                <div class="form-row" id="DisPlayModelColor">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-center">
+                            <div class="col-3 text-center" id="DivPicLoading" style="display:none;">
+                                <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>
+                            </div>
+                        </div>
+                        <div class="form-row" id="DisPlayPic">
+
+                        </div>
+                        <div class="form-row justify-content-center mt-3" id="DivBtnSelectPart">
+                            <div class="col-6 col-md-6 col-lg-5">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="btnPopPartPic"><i class="fas fa-list-alt"></i> รายการสินค้า</button>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-5">
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="btnSelectAllPartPic"><i class="fas fa-list-alt"></i> เลือกทั้งหมด</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" id="ModelEmpty">
+                        <div class="form-row mb-2 justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-6 mb-2">
+                                <button type="button" id="btnOpenNav3" class="btn btn-outline-primary btn-block" formaction="/pssretail/Cart"> เลือกจากสมุดภาพอะไหล่</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="TabPssPartList" class="tab-pane fade" tabindex="2">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="form-row mb-3 justify-content-center">
+                            <div class="col-12 col-md-7 col-lg-10">
+                                <label class="control-label"> ระบุชื่อหรือรหัสอะไหล่</label>
+
+                                <div class="input-group">
+                                    <input maxlength="20" class="form-control" placeholder="ระบุชื่อหรือรหัสอะไหล่" type="text" data-val="true" data-val-length="The field TextFilterPart must be a string with a maximum length of 25." data-val-length-max="25" id="TextFilterPart" name="TextFilterPart" value="" />
+                                    <div class="input-group-append">
+                                        <div class="btn btn-outline-primary" id="btnSearchPart"><i class="fa fa-search"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="col-3 text-center" id="DivLoading" style="display:none;">
+                                <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>
+                            </div>
+                        </div>
+                        <div id="DivSearchPart" style="display:none;">
+                            <div class="control-section">
+                                <div id="PartListGrid">
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-row justify-content-end mt-1 mb-3">
+                                <span class="text-danger" style="font-size:small;"> ** แสดงโดยมากสุดที่ 100 รายการ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="TabAddPssPart" class="tab-pane fade" tabindex="3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="form-row mb-3 justify-content-center">
+                            <div class="col-12 col-md-7 col-lg-10">
+                                <label class="control-label"> ระบุรหัสสินค้า</label>
+
+                                <div class="input-group">
+                                    <input maxlength="20" class="form-control" placeholder="ระบุรหัสสินค้า" type="text" data-val="true" data-val-length="The field TextPartsNo must be a string with a maximum length of 25." data-val-length-max="25" id="TextPartsNo" name="TextPartsNo" value="" />
+                                    <div class="input-group-append">
+                                        <div class="btn btn-outline-primary" id="btnAddPartno"><i class="fa fa-plus"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="col-3 text-center" id="DivLoading2" style="display:none;">
+                                <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="TabPartsChangeOften" class="tab-pane" tabindex="4">
+                <div class="card mb-3">
+                    <div class="card-body">
+
+                        <div class="form-row mb-2">
+                            <div class="col-12 col-md-9" style="align-self:center;">
+                                <span>
+                                    <b>รุ่น : </b>
+                                    <b id="DisplayColorModelname"></b>
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row justify-content-center">
+                            <div class="col-3 text-center d-none" id="DivChangeOftenLoading">
+                                <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>
+                            </div>
+                        </div>
+
+                        <div id="DivOftenGrid">
+                            <div class="control-section">
+                                <div id="ModelPartListGrid">
+                                    
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="TabPartsPromotion" class="tab-pane" tabindex="2">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="mb-2 col-12">
+                            <div class="form-row justify-content-center">
+                                <div class="mb-2 col-12 col-md-3 d-inline-flex text-primary  text-right align-items-center justify-content-end">
+                                    แสดงเฉพาะรุ่น
+                                </div>
+                                <div class="mb-2 col-5 col-md-3 d-none">
+                                    <select class="form-control" id="CateBrandId" name="CateBrandId"><option selected="selected" value="00001">HONDA</option>
+</select>
+                                </div>
+                                <div class="mb-2 col-12 col-md-4">
+                                    <select class="form-control" id="CateModelId" name="CateModelId"><option selected="selected" value="00000">&#xE40;&#xE25;&#xE37;&#xE2D;&#xE01;&#xE23;&#xE38;&#xE48;&#xE19;&#xE23;&#xE16;</option>
+<option value="00068">ADV150</option>
+<option value="00079">ADV160</option>
+<option value="00077">ADV350</option>
+<option value="00001">AIR BLADE</option>
+<option value="00002">AIR BLADE-i</option>
+<option value="00082">C125</option>
+<option value="00004">CB150R</option>
+<option value="00014">CB300FA</option>
+<option value="00003">CB300R</option>
+<option value="00005">CBR150R</option>
+<option value="00007">CBR250R</option>
+<option value="00067">CBR250RR</option>
+<option value="00008">CBR300R</option>
+<option value="00080">CL300</option>
+<option value="00015">CLICK110</option>
+<option value="00016">CLICK110i</option>
+<option value="00017">CLICK125i</option>
+<option value="00066">CLICK150i</option>
+<option value="00078">CLICK160</option>
+<option value="00019">CRF250L</option>
+<option value="00018">CRF250M</option>
+<option value="00072">CRF300L</option>
+<option value="00070">CT125</option>
+<option value="00020">CZ-i</option>
+<option value="00024">DREAM110i</option>
+<option value="00025">DREAM125</option>
+<option value="00026">FORZA300</option>
+<option value="00071">FORZA350</option>
+<option value="00081">Giorno Plus</option>
+<option value="00027">ICON</option>
+<option value="00076">LEAD125</option>
+<option value="00028">MOOVE</option>
+<option value="00029">MSX125</option>
+<option value="00074">MSX GROM</option>
+<option value="00030">PCX125</option>
+<option value="00031">PCX150</option>
+<option value="00073">PCX160</option>
+<option value="00033">PHANTOM200</option>
+<option value="00034">REBEL300</option>
+<option value="00075">SCOOPY</option>
+<option value="00036">SCOOPY-i</option>
+<option value="00037">SONIC125</option>
+<option value="00038">SPACY-i</option>
+<option value="00023">SUPER CUB</option>
+<option value="00039">WAVE100X</option>
+<option value="00040">WAVE100Z</option>
+<option value="00041">WAVE110i</option>
+<option value="00042">WAVE110i AT</option>
+<option value="00046">WAVE125</option>
+<option value="00044">WAVE125i</option>
+<option value="00045">WAVE125R</option>
+<option value="00047">WAVE125S</option>
+<option value="00048">WAVE125X</option>
+<option value="00049">ZOOMER-X</option>
+</select>
+
+                                </div>
+                                <div class="mb-2 col-12 col-md-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row" id="DivShowPro">
+                            <div class="col-12" id="promotion_zone">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-12 col-lg-12 col-xl-6">
+
+        <div class="card mb-1">
+            <div class="card-body px-0">
+                <div class="form-row mb-2">
+                    <div class="col-md-12 text-center text-primary">
+                        <span><i class="fa fa-shopping-basket fa-2x"></i> ตะกร้าสินค้า</span>
+                    </div>
+                </div>
+                
+
+
+
+<style type="text/css">
+    .input-number-group .input-number-decrement,
+    .input-number-group .input-number-increment {
+        min-width: 25px;
+        padding: 0px 5px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .input-number-group .input-number {
+        text-align: center;
+        /*  max-width: 40px;*/
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .input-group.input-number-group {
+        max-width: 110px;
+    }
+</style>
+
+
+
+<input type="hidden" id="CartDetail" name="CartDetail" value="System.Collections.Generic.List`1[PSSRetail.ViewModels.CartItemViewModel]" />
+<input type="hidden" data-val="true" data-val-required="The CartMode field is required." id="CartMode" name="CartMode" value="1" />
+
+
+<div class="mx-0">
+    <div id="CartItemListGrid">
+
+        
+        
+        
+    </div>
+</div>
+
+
+
+<script id="PartNameTemplate" type="text/x-template">
+    <div>
+        ${PART_NAME}
+    </div>
+    <div>
+        ${PART_NO}
+
+            <i class="part-image-icon far fa-question-circle ml-2" style="cursor:pointer"></i>
+
+
+    </div>
+</script>
+
+    <script id="proColTemplate" type="text/x-template">
+
+        ${if(PRO_LINE_NO > 0)}
+        <div class="text-left pr-2 font-weight-bold" style="color:red;">${PRO_STATUS}</div>
+        ${/if}
+        ${if(DISC_STATUS === "U")}
+        <div class="text-left pr-2 text-warning"><b>${DISC_STATUS}</b></div>
+        ${/if}
+
+    </script>
+
+
+
+
+<script id="qtyColTemplate" type="text/x-template">
+    <div class="d-flex justify-content-center">
+        <div class="input-group input-number-group">
+            <div class="input-group-prepend deletechange" data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" data-TotalQty="${TOTAL_QTY}" onclick="CartItem.DecreaseQty(this)">
+                <button class="btn btn-sm btn-outline-secondary input-number-decrement" type="button"> - </button>
+            </div>
+            <input class="input-number form-control form-control-sm" type="text" value="${TOTAL_QTY}"
+                   onkeydown="CartItem.FilterInputNumber(event)"
+                   onkeyup="CartItem.HandleQtyKeyUp(event)"
+                   data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" data-TotalQty="${TOTAL_QTY}">
+
+            <div class="input-group-append updatechange" data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" data-TotalQty="${TOTAL_QTY}" onclick="CartItem.IncreaseQty(this)">
+                <button class="btn btn-sm btn-outline-secondary input-number-increment" type="button"> + </button>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+
+
+
+<script id="QtyShowColTemplate" type="text/x-template">
+    ${if(QTY > 0 && PRO_QTY > 0)}
+    <div class="text-right pr-2" style="color:red;">${PRO_QTY}</div>
+    <div class="text-right pr-2">${QTY}</div>
+
+    ${/if}
+</script>
+
+
+<script id="PriceColTemplate" type="text/x-template">
+    ${if(PRO_QTY > 0)}
+    <div class="text-right" style="color:red;">${SHOW_PRO_PRICE}</div>
+    ${/if}
+    ${if(QTY > 0)}
+    <div class="text-right">${SHOW_PRICE}</div>
+    ${/if}
+    ${if(QTY === 0 && PRO_QTY === 0)}
+    <div class="text-right">${SHOW_PRICE}</div>
+    ${/if}
+
+</script>
+
+<script id="actionColTemplate" type="text/x-template">
+    <button class="btn btn-sm btn-outline-secondary btn-removeItem" type="button" data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" onclick="CartItem.RemoveItem(this)"> <i class="fas fa-trash-alt"></i> </button>
+</script>
+
+
+
+<script id="cartRowTemplate" type="text/x-template">
+
+
+    <div class="cartRow">
+        <div class="row mx-0 mb-1 d-flex align-items-center">
+            <div class="col-12 col-sm-4  col-xl-5 pl-0">
+                <div>
+                    ${PART_NAME}
+                </div>
+                <div>
+                    ${PART_NO}
+
+                        <i class="part-image-icon far fa-question-circle ml-2 pointer-cursor"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mx-0 mb-1 d-flex align-items-center">
+            <div class="col-12 col-sm-2 px-0">
+                <div class="text-left font-weight-bold">
+                    ${if(PRO_LINE_NO > 0)}
+                    <span class="pr-2" style="color:red;"> ฿${SHOW_PRO_PRICE}</span>
+                    ${else}
+                    ฿${SHOW_PRICE}
+                    ${/if}
+                    ${if(PRO_LINE_NO > 0)}
+                    <span class="pr-2" style="color:red;">&nbsp; ${PRO_STATUS}</span>
+                    ${/if}
+                    ${if(PRO_LINE_NO == 0 && DISC_STATUS === "X")}
+                    <span class="pr-2"style="color:red;">&nbsp; ${DISC_STATUS}</span>
+                    ${/if}
+                    ${if(PRO_LINE_NO == 0 && DISC_STATUS === "U")}
+                    <span class="pr-2 text-warning">&nbsp; ${DISC_STATUS}</span>
+                    ${/if}
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mb-1 d-flex justify-content-end">
+            <div class="col-12 justify-content-end align-items-center px-0 d-flex flex-row">
+                ${if(QTY > 0 && PRO_LINE_NO > 0)}
+                <div class="flex-column small text-right">
+                    <div class="pr-2">${QTY}</div>
+                    <div class="pr-2" style="color:red;">${PRO_QTY}</div>
+                </div>
+                ${/if}
+                <div class="input-group input-number-group">
+                    <div class="input-group-prepend deletechange" data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" data-TotalQty="${TOTAL_QTY}" onclick="CartItem.DecreaseQty(this)">
+                        <button class="btn btn-sm btn-outline-secondary input-number-decrement" type="button"> - </button>
+                    </div>
+
+                    <input class="input-number form-control form-control-sm" type="text" value="${TOTAL_QTY}"
+                           onkeypress="CartItem.FilterInputNumber(event)"
+                           onchange="CartItem.ChangeQty(event)"
+                           data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" data-TotalQty="${TOTAL_QTY}">
+
+                    <div class="input-group-append updatechange" data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" data-TotalQty="${TOTAL_QTY}" onclick="CartItem.IncreaseQty(this)">
+                        <button class="btn btn-sm btn-outline-secondary input-number-increment" type="button"> + </button>
+                    </div>
+                </div>
+                 <span class="text-secondary" role="button" data-productId="${PSS_PRODUCT_ID}" data-BrandId="${PSS_BRAND_ID}" data-Partno="${PART_NO}" onclick="CartItem.RemoveItem(this)"> <i class="fas fa-trash-alt pl-3 pr-1"></i> </span>
+            </div>
+         
+        </div>
+    </div>
+
+
+</script>
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="form-row justify-content-end mt-1 mb-3">
+            <div class="col-12 col-sm-8">
+                    <div class="col-12">
+                        <span class="text-warning" style="font-size:small;"> สินค้าที่มีเครื่องหมาย  <b>U</b>  มีราคาเพิ่มขึ้น เพราะต้องจัดหาสินค้าด่วน</span>                  
+                    </div>
+
+            </div>
+
+
+            <div class="col-12 col-sm-4 text-right">
+                <a href="#" id="btnDeleteAll" style="font-size:small; vertical-align:bottom;" class="text-secondary">ลบทั้งหมด</a>
+            </div>
+        </div>
+        <div class="form-row mx-2 mx-sm-4 mt-2 mb-1 justify-content-end">
+            <div class="col-5 col-md-5 text-right">
+                <span><b>ยอดสุทธิ</b></span>
+            </div>
+            <div class="col-4 col-md-2 text-right">
+                <span>
+
+                    <b id="DisPlayAmountTotal">0.00</b>
+                </span>
+            </div>
+            <div class="col-1 col-md-1 text-center">
+                <span><b>บาท</b></span>
+            </div>
+        </div>
+        <div class="form-row mx-2 mx-sm-4 mb-2 justify-content-end">
+            <div class="col-10 col-md-10 text-right">
+                <span style="font-size:0.9rem; color:red;">ราคารวมภาษีมูลค่าเพิ่ม</span>
+            </div>
+            <div class="col-1 col-md-1 text-center">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="form-row mx-2 mx-sm-4 justify-content-center">
+
+    <div class="col-6 col-md-5 col-lg-2">
+        <a class="btn btn-outline-secondary btn-block" href="/pssretail/Cart/CartView"><i class="fas fa-shopping-cart"></i> ตะกร้าสินค้า</a>
+    </div>
+    <div class="col-6 col-md-5 col-lg-2">
+
+        <button type="button" id="BtnSaveOrder" class="btn btn-primary btn-block"><i class="fas fa-check"></i> สั่งซื้อ</button>
+    </div>
+</div>
+
+<div id="modelSidenav" class="sidenav">
+    <div class="form-row mx-4 mx-sm-1">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="form-row justify-content-center mb-2">
+                        <div class="col-12">
+                            <span><b> ค้นหาจากรุ่นรถ</b></span>
+                        </div>
+                        <a class="closebtn text-sm-center" onclick="Cart.closeNav()">&times;</a>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-2 mb-2">
+                            <select class="form-control" id="BrandId" name="BrandId"><option value="00001">HONDA</option>
+</select>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-4 mb-2">
+                            <select class="form-control" id="ModelId" name="ModelId"><option selected="selected" value="00000">&#xE40;&#xE25;&#xE37;&#xE2D;&#xE01;&#xE23;&#xE38;&#xE48;&#xE19;&#xE23;&#xE16;</option>
+<option value="00068">ADV150</option>
+<option value="00079">ADV160</option>
+<option value="00077">ADV350</option>
+<option value="00001">AIR BLADE</option>
+<option value="00002">AIR BLADE-i</option>
+<option value="00082">C125</option>
+<option value="00004">CB150R</option>
+<option value="00014">CB300FA</option>
+<option value="00003">CB300R</option>
+<option value="00005">CBR150R</option>
+<option value="00007">CBR250R</option>
+<option value="00067">CBR250RR</option>
+<option value="00008">CBR300R</option>
+<option value="00080">CL300</option>
+<option value="00015">CLICK110</option>
+<option value="00016">CLICK110i</option>
+<option value="00017">CLICK125i</option>
+<option value="00066">CLICK150i</option>
+<option value="00078">CLICK160</option>
+<option value="00019">CRF250L</option>
+<option value="00018">CRF250M</option>
+<option value="00072">CRF300L</option>
+<option value="00070">CT125</option>
+<option value="00020">CZ-i</option>
+<option value="00024">DREAM110i</option>
+<option value="00025">DREAM125</option>
+<option value="00026">FORZA300</option>
+<option value="00071">FORZA350</option>
+<option value="00081">Giorno Plus</option>
+<option value="00027">ICON</option>
+<option value="00076">LEAD125</option>
+<option value="00028">MOOVE</option>
+<option value="00029">MSX125</option>
+<option value="00074">MSX GROM</option>
+<option value="00030">PCX125</option>
+<option value="00031">PCX150</option>
+<option value="00073">PCX160</option>
+<option value="00033">PHANTOM200</option>
+<option value="00034">REBEL300</option>
+<option value="00075">SCOOPY</option>
+<option value="00036">SCOOPY-i</option>
+<option value="00037">SONIC125</option>
+<option value="00038">SPACY-i</option>
+<option value="00023">SUPER CUB</option>
+<option value="00039">WAVE100X</option>
+<option value="00040">WAVE100Z</option>
+<option value="00041">WAVE110i</option>
+<option value="00042">WAVE110i AT</option>
+<option value="00046">WAVE125</option>
+<option value="00044">WAVE125i</option>
+<option value="00045">WAVE125R</option>
+<option value="00047">WAVE125S</option>
+<option value="00048">WAVE125X</option>
+<option value="00049">ZOOMER-X</option>
+</select>
+                        </div>
+                        <div class="col-4 col-md-2 col-lg-2 mb-2">
+                            <button type="button" id="btnSeach" class="btn btn-primary btn-block" formaction="/pssretail/Cart"> เลือก</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="ShowModel">
+
+                        <style>
+
+    .skip-link svg {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.2s;
+    }
+</style>
+<div class="form-row">
+        <div class="col-12">
+            <p class="text-secondary text-center">ไม่พบข้อมูล</p>
+        </div>
+        <hr/>
+        <div class="col-12 text-center">
+            <a href="#" onclick="Cart.closeNav()" class="font-weight-bold skip-link">
+                ค้นหาด้วยรหัสหรือชื่ออะไหล่
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+</div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modelPicSidenav" class="sidenav">
+    <div class="form-row mx-1 mx-md-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="form-row justify-content-center">
+
+                        <div class="col-md-2" style="align-self:center;">
+                            <span><b> เลือกรูปภาพอะไหล่ </b></span>
+                        </div>
+                        <a class="closebtn" onclick="Cart.closeModelPictureNav()">&times;</a>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div id="ShowPartPicture">
+                        <div class="col-md-12">
+                            <p class="text-danger text-center">กรุณาเลือกรุ่น</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="confirm-Discontinued" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="HeadText">สินค้าเลิกผลิต</h5>
+            </div>
+            <div class="modal-body">
+                <h6 style="color:red;">สินค้านี้เลิกผลิต สามารถใช้สินค้าแทนได้ ใช้แทนหรือไม่เอา?</h6>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="BtDiscontinuedYes btn btn-outline-danger btn-sm pr-4 pl-4">ใช้แทน</button>
+                <button type="button" class="BtDiscontinuedNo btn btn-outline-secondary btn-sm pr-4 pl-4">ไม่เอา</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="confirm-OutStock" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="HeadText">สินค้าหมด Stock</h5>
+            </div>
+            <div class="modal-body">
+                <h6 style="color:red;">สินค้านี้ไม่มีใน Stock หมด สามารถใช้สินค้าอื่นแทนได้  ต้องการสินค้าใช้แทนหรือตัวเดิม?</h6>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="BtOutStockYes btn btn-outline-danger btn-sm pr-4 pl-4">ใช้แทน</button>
+                <button type="button" class="BtOutStockNo btn btn-outline-secondary btn-sm pr-4 pl-4">ตัวเดิม</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="PartImgColTemplate" type="text/x-template">
+    <i class="part-image-icon far fa-question-circle ml-2" style="cursor:pointer" title="ตรวจสอบรุ่นรถที่ใช้อะไหล่"></i>
+</script>
+
+
+
+<div class="modal fade" id="ModalChoicePartPic" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:1000px!important;">
+        <div class="modal-content">
+            <div class="modal-header pb-1 pt-1">
+                <p class="modal-title mt-1" id="ModalHeader"><b>เลือกรายการอะไหล่</b></p>
+                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="control-section">
+
+                            <div id="ChoicePartPicGrid">                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="ModalPartPicList" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:1000px!important;">
+        <div class="modal-content">
+            <div class="modal-header pb-1 pt-1">
+                <p class="modal-title" id="ModalHeader">เลือกรายการอะไหล่</p>
+                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="control-section">
+
+                            <div id="PartPicListGrid">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="ModalPartColorPicList" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:1000px!important;">
+        <div class="modal-content">
+            <div class="modal-header pb-1 pt-1">
+                <p class="modal-title" id="ModalHeader">เลือกรายการอะไหล่</p>
+                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="control-section">
+
+                            <div id="PartPicColorListGrid">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="confirm-Urgent" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="HeadText">ยืนยันการสั่งซื้อ</h5>
+            </div>
+            <div class="modal-body">
+                <h6 > สินค้ารายการที่คุณเลือกมีราคาเพิ่มขึ้นเพราะต้องจัดหาสินค้าด่วน</h6>
+                <h6>คุณต้องการยืนยันการสั่งซื้อสินค้า ใช่หรือไม่?</h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="BtUrgentYes" class="BtUrgentYes btn btn-outline-danger btn-sm pr-4 pl-4">ยืนยันสั่งซื้อ</button>
+                <button type="button" class="BtUrgentNo btn btn-outline-secondary btn-sm pr-4 pl-4" data-dismiss="modal">ต้องการแก้ไข</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Modal_ModelForParts_List" data-backdrop="static" tabindex="-2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:800px!important;">
+        <div class="modal-content">
+            <div class="modal-header pb-1 pt-1">
+                <p class="modal-title" id="ModalHeader">ข้อมูลรุ่นรถสำหรับอะไหล่</p>
+                <button type="button" class="close p-0 m-0" id="LookupModelPartClose1" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="d-none" id="ModelPartsEmpty">
+                    <div class="form-row mb-2">
+                        <div class="col-12 text-center">
+                            ไม่พบข้อมูล
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row justify-content-center">
+                    <div class="col-3 text-center d-none" id="ModelPartsDivLoading">
+                        <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>
+                    </div>
+                </div>
+
+                <div class="form-row d-none" id="DivModelPartsGrid">
+                    <div class="col-12">
+                        <div class="control-section">
+
+                            <div id="Lookup_ModelParts_Grid">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="LookupModelPartClose2" class="btn btn-outline-secondary btn-sm pr-4 pl-4">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ModalProductImages" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:800px!important;">
+        <div class="modal-content">
+            <div class="modal-header py-3">
+                <p class="modal-title" id="ModalHeader">
+                    รูปภาพ
+                </p>
+                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="ProductImages">
+                    <div class="embed-container ratio-1-1">
+                        <img src="" id="imagepreview" class="img-block img-fluid center-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionResultModal" tabindex="-1" role="dialog" aria-labelledby="actionSuccessModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionResultModal_icon" class="fa far fa-check-circle text-primary fa-3x my-3"></i>
+                        <h5 id="actionResultModal_message" class="my-3">เพิ่มสินค้าลงในรถเข็นแล้ว</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionEmptyPartNoModal" tabindex="-1" role="dialog" aria-labelledby="actionEmptyPartNoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionEmptyPartNoModal_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actionEmptyPartNoModal_message" class="my-3">ไม่พบรหัสสินค้านี้</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionNotReadyPartNoModal" tabindex="-1" role="dialog" aria-labelledby="actionNotReadyPartNoModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionNotReadyPartNoModal_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actionNotReadyPartNoModal_message1" class="my-3">สินค้านี้ยังไม่มีราคาขาย</h5>
+                        <h5 id="actionNotReadyPartNoModal_message2" class="my-3">บริษัทจะติดตามและแจ้งให้ท่านทราบโดยเร็ว</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionPartDiscontinuedModal" tabindex="-1" role="dialog" aria-labelledby="actionPartDiscontinuedModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actPartDiscontinued_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actPartDiscontinued_message1" class="my-3">สินค้าเลิกผลิต</h5>
+                        <h5 id="actPartDiscontinued_message2" class="my-3">ติดต่อสอบถาม โทร. 0 2881 9292 (-8)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade sccActionModal" id="actionWaitforLongModal" tabindex="-1" role="dialog" aria-labelledby="actionPartDiscontinuedModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:650px !important">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i id="actionWaitforLongModal_icon" class="fa far fa-exclamation-triangle text-primary fa-3x my-3"></i>
+                        <h5 id="actionWaitforLongModal_message1" class="my-3 text-center" style="justify-items:center"></h5>
+                        <h5 id="actionWaitforLongModal_message2" class="my-3">ติดต่อสอบถาม โทร. 0 2881 9292 (-8)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoadingModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-row justify-content-center">
+                        <div class="col-3 text-center" style="background:rgba(0, 0, 0, 0.00)" id="DivLoading">
+                            <div class="spinner-border text-primary" style="width:5rem;height:5rem;"></div>  Loading...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="border-top footer">
+      
+            <div class="form-row mr-4 ml-4 mt-2">
+                <div class="col-12 col-md-2">
+                    <div class="col-12 font-weight-bold small text-wrap">บริษัท สุภรัตน์มอเตอร์ จำกัด </div>
+                    <div class="col-12 font-weight-bold small text-wrap">123, 125 ถนนสิรินธร แขวงบางบำหรุ เขตบางพลัด กรุงเทพมหานคร 10700</div>
+
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">การสั่งซื้อ </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Cart"> เลือกสินค้า </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Cart/CartView"> ตะกร้าสินค้า </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Receive/Payment">  แจ้งชำระเงิน </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">ลูกค้า</div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Customer/CustomerView">  ข้อมูลลูกค้า</a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Order/OrderList">  ใบสั่งซื้อ</a>
+                    </div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/Receive/ReceiveList">  ใบชำระเงิน</a>
+                    </div>
+                    <div class="col-12">
+                        <a id="cwc-link" class="cwc-banner-show-settings font-weight-bold small" href="#cwc-link"> ตั้งค่าคุกกี้</a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">คู่มือลูกค้า</div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" target="_blank" href="/pssretail/Help/Shopping"> วิธีการสั่งซื้อ</a>
+                    </div>
+                    <div class="col-12">
+                    <a class="font-weight-bold small" href="https://chat.suparat.net/hc/help/articles/1758957846-" target="_blank">วิธีการชำระเงิน</a>
+                    </div>
+                    <div class="col-12">
+                    <a class="font-weight-bold small" href="https://chat.suparat.net/hc/help/articles/1752927404-" target="_blank">วิธีติดตามการสั่งซื้อ</a>
+                    </div>
+                    <div class="col-12">
+                    <a class="font-weight-bold small" href="https://chat.suparat.net/hc/help/articles/1758960733-" target="_blank">
+                        วิธีการจัดส่งสินค้า</a>
+               
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">ติดต่อเรา</div>
+                    <div class="col-12">
+                        <a class="font-weight-bold small" href="/pssretail/ContactUs"> ติดต่อเรา</a>
+                    </div>
+                    <div class="col-12">
+                        <a href="https://www.facebook.com/SuparatMotor.co/?rf=517874958259179%2F" class="font-weight-bold">      <i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://line.me/R/ti/p/@suparat" class="font-weight-bold">   <i class="fab fa-line fa-2x"></i></a>
+                        <a class="font-weight-bold" href="/pssretail/ContactUs/ContactUs">   <i class="fas fa-paper-plane fa-2x"></i></a>
+
+                    </div>
+                    <div class="col-12"><i class="fas fa-phone-square-alt"></i> 0 2881 9292 (-8)</div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="col-12 font-weight-bold">เกี่ยวกับเรา</div>
+                    <div class="col-12">
+                        <a href="/pssretail/pdf/privacy.pdf" class="font-weight-bold small">   Privacy Policy</a>
+                    </div>
+                    <div class="col-12">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <a href='https://dbdregistered.dbd.go.th/api/public/shopinfo?param=88FC3029F2DD99B9B93E887468D2ED372C7820342AEC6A0AC150C29BEC8FEF51' target="_blank">
+                            <img class="img-fluid" src='https://dbdregistered.dbd.go.th/api/public/banner?param=88FC3029F2DD99B9B93E887468D2ED372C7820342AEC6A0AC150C29BEC8FEF51' />
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+     
+
+
+        <div class="text-center">
+            <p class="mt-1 mb-0 text-center text-wrap font-weight-bold small">
+                © Copyright 2024 Suparat Motor Corp.,Ltd. (All Rights Reserved)
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="/pssretail/lib/jquery/jquery.min.js?v=82hEkGrSMJh3quMSG4f7FbngmAPLTDM63H4eNayS4Us"></script>
+    <script src="/pssretail/lib/bootstrap/dist/js/bootstrap.bundle.min.js?v=fBcjCr42EZAu4qYONwCHEKDCJ1bvGCHWC9fY-kGXIsE"></script>
+
+    <script src="/pssretail/js/Layout/Layout.js?v=hFoiii7GhcoBAKlvPggDiXB2RcY-HzfXiMRrcKXSZR4"></script>
+
+    <script src="/pssretail/lib/bs-custom-file-input/bs-custom-file-input.min.js?v=e0DUqNhsFAzOlhrWXnMOQwRoqrCRlofpWgyhnrIIaPo"></script>
+
+    <script>var Resources = {"Localization.SharedResource":{"WaitingforSalePrice":"\u0E23\u0E2D\u0E23\u0E32\u0E04\u0E32\u0E02\u0E32\u0E22","NoTransaction":"\u0E44\u0E21\u0E48\u0E21\u0E35\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C\u0E17\u0E33\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23","NotFindPro":"\u0E02\u0E2D\u0E2D\u0E20\u0E31\u0E22\u0E04\u0E48\u0E30 \u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E42\u0E1B\u0E23\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19","ContactUs":"\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E40\u0E23\u0E32","OrderList":"\u0E43\u0E1A\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","BuyNow":"\u0E0B\u0E37\u0E49\u0E2D\u0E40\u0E25\u0E22","NoData":"\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25","GeneralSpareParts":"\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48\u0E17\u0E31\u0E48\u0E27\u0E44\u0E1B","Logout":"\u0E2D\u0E2D\u0E01\u0E08\u0E32\u0E01\u0E23\u0E30\u0E1A\u0E1A","EnterPartName":"\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E0A\u0E37\u0E48\u0E2D\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48","DefaultAddress":"\u0E15\u0E31\u0E49\u0E07\u0E40\u0E1B\u0E47\u0E19\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19","Cookie Preferences":"\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E04\u0E38\u0E01\u0E01\u0E35\u0E49","PriceVat":"\u0E23\u0E32\u0E04\u0E32\u0E23\u0E27\u0E21\u0E20\u0E32\u0E29\u0E35\u0E21\u0E39\u0E25\u0E04\u0E48\u0E32\u0E40\u0E1E\u0E34\u0E48\u0E21","CartView":"\u0E15\u0E30\u0E01\u0E23\u0E49\u0E32\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32","Privacy":"Privacy Policy","ScanPromptpay":"\u0E2A\u0E41\u0E01\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19\u0E1C\u0E48\u0E32\u0E19 PromptPay","NotReadyPartNo2":"\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E08\u0E30\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E41\u0E25\u0E30\u0E41\u0E08\u0E49\u0E07\u0E43\u0E2B\u0E49\u0E17\u0E48\u0E32\u0E19\u0E17\u0E23\u0E32\u0E1A\u0E42\u0E14\u0E22\u0E40\u0E23\u0E47\u0E27","SelectParts":"\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48","ReceiveList":"\u0E43\u0E1A\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19","EditCustomer":"\u0E41\u0E01\u0E49\u0E44\u0E02\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32","mnOrderTracking":"\u0E27\u0E34\u0E18\u0E35\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","DeleteAll":"\u0E25\u0E1A\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14","Customerinfo":"\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32","Payment":"\u0E41\u0E08\u0E49\u0E07\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19","PleaseSelectModel":"\u0E01\u0E23\u0E38\u0E13\u0E32\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E23\u0E38\u0E48\u0E19","mnHowToPayment":"\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E0A\u0E33\u0E23\u0E30\u0E40\u0E07\u0E34\u0E19","AddCartSuccess":"\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E25\u0E07\u0E43\u0E19\u0E23\u0E16\u0E40\u0E02\u0E47\u0E19\u0E41\u0E25\u0E49\u0E27","Promotion":"\u0E42\u0E1B\u0E23\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19","Fullname":"\u0E0A\u0E37\u0E48\u0E2D - \u0E19\u0E32\u0E21\u0E2A\u0E01\u0E38\u0E25","SearchPictures":"\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E23\u0E39\u0E1B","mnHowToOrder":"\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","ChangePassword":"\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19","mnHowToDelivery":"\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32","ShowOnlyModels":"\u0E41\u0E2A\u0E14\u0E07\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E23\u0E38\u0E48\u0E19","AddNewAddress":"\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E2B\u0E21\u0E48","Email":"\u0E2D\u0E35\u0E40\u0E21\u0E25","WaitingShippingCost":"\u0E23\u0E2D\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19","Admin":"\u0E1C\u0E39\u0E49\u0E14\u0E39\u0E41\u0E25\u0E23\u0E30\u0E1A\u0E1A","About":"\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E40\u0E23\u0E32","AskUs":"\u0E2A\u0E2D\u0E1A\u0E16\u0E32\u0E21","Order":"\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D","Login":"\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A","Total":"\u0E22\u0E2D\u0E14\u0E23\u0E27\u0E21","PartsChangeOften":"\u0E2D\u0E30\u0E44\u0E2B\u0E25\u0E48\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E1A\u0E48\u0E2D\u0E22","Address":"\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48","AddCart":"\u0E43\u0E2A\u0E48\u0E15\u0E30\u0E01\u0E23\u0E49\u0E32","CaptchaRequired":"\u0E42\u0E1B\u0E23\u0E14\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E15\u0E31\u0E27\u0E15\u0E31\u0E27\u0E15\u0E19\u0E14\u0E49\u0E27\u0E22 CAPTCHA","PartsPromotion":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E42\u0E1B\u0E23\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19","Notifications":"\u0E41\u0E08\u0E49\u0E07\u0E40\u0E15\u0E37\u0E2D\u0E19","SystemError":"\u0E40\u0E01\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E02\u0E2D\u0E07\u0E23\u0E30\u0E1A\u0E1A \u0E01\u0E23\u0E38\u0E13\u0E32\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E21\u0E48\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07","SearchPictureStr":"\u0E41\u0E2A\u0E14\u0E07\u0E23\u0E39\u0E1B\u0E20\u0E32\u0E1E\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E04\u0E33\u0E04\u0E49\u0E19\u0E2B\u0E32 ","Register":"\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01","NotReadyPartNo":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E19\u0E35\u0E49\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E35\u0E23\u0E32\u0E04\u0E32\u0E02\u0E32\u0E22","ModelTel":"\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E2A\u0E2D\u0E1A\u0E16\u0E32\u0E21 \u0E42\u0E17\u0E23. 0 2881 9292 (-8)","EmptyPartsno":"\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E19\u0E35\u0E49","BestSeller":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E02\u0E32\u0E22\u0E14\u0E35","SaveData":"\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25","CancellationReason":"\u0E2A\u0E32\u0E40\u0E2B\u0E15\u0E38\u0E01\u0E32\u0E23\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01","ShowAllPics":"\u0E41\u0E2A\u0E14\u0E07\u0E23\u0E39\u0E1B\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14","mnHowToPaymentInformed":"\u0E27\u0E34\u0E18\u0E35\u0E41\u0E08\u0E49\u0E07\u0E01\u0E32\u0E23\u0E42\u0E2D\u0E19\u0E40\u0E07\u0E34\u0E19","EditAddress":"\u0E41\u0E01\u0E49\u0E44\u0E02\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48","AlertTaxBranchNo":"\u0E2A\u0E33\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E43\u0E2B\u0E0D\u0E48 = 00000 \u0E16\u0E49\u0E32\u0E2A\u0E32\u0E02\u0E32\u0E43\u0E2B\u0E49\u0E23\u0E30\u0E1A\u0E38\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E08\u0E14\u0E17\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E19","PartDiscontinued":"\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E40\u0E25\u0E34\u0E01\u0E1C\u0E25\u0E34\u0E15","mnCustomerGuide":"\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32","ApplyDiscount":"\u0E04\u0E33\u0E19\u0E27\u0E13\u0E2A\u0E48\u0E27\u0E19\u0E25\u0E14(%)","ChatByWeb":"\u0E41\u0E0A\u0E17\u0E17\u0E32\u0E07\u0E40\u0E27\u0E47\u0E1A","ChatByLine":"\u0E41\u0E0A\u0E17\u0E17\u0E32\u0E07 Line","Baht":"\u0E1A\u0E32\u0E17","Cart":"\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32","Home":"\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E25\u0E31\u0E01","Year":"\u0E1B\u0E35","ColorStickerSet":"\u0E0A\u0E38\u0E14\u0E2A\u0E35/\u0E2A\u0E15\u0E34\u0E4A\u0E01\u0E40\u0E01\u0E2D\u0E23\u0E4C"}};</script>
+
+    
+            <div class="floating-menu ">
+                <span class="plus-icon">
+                    <span class="close">
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <span class="open">
+                            <i class="fa fa-comment pr-1" aria-hidden="true"></i>
+                                สอบถาม
+                    </span> 
+                </span>
+                <ul class="floating-nav">
+                    <li class="chat-by-line">
+                         แชททาง Line
+                    </li>
+                    <li class="chat-by-web">
+                        <i class="fa fa-comment mr-1"></i> แชททางเว็บ
+                    </li>
+                </ul>
+
+            </div>
+<script>
+
+
+
+
+    let cwMail = "";
+    let cwMobile = "";
+    let cwName = "";
+    let cwHash = "";
+    
+
+
+            window.chatwootSettings = {
+                hideMessageBubble: true,
+                position: 'right', // This can be left or right
+                locale: 'th', // Language to be set
+                type: 'expanded_bubble', // [standard, expanded_bubble]
+                launcherTitle: 'Chat'
+            };
+
+            window.addEventListener('chatwoot:ready', function () {
+                $("#logoutLink").on("click", function () {
+                    window.$chatwoot.reset();
+                });
+
+                if (cwMail !== "") {
+                    window.$chatwoot.setUser(cwMail, {
+                        name: cwName, // Name of the user
+                        email: cwMail, // Email of the user                       
+                        phone_number: "+66" + cwMobile, // Phone Number of the user
+                        identifier_hash: cwHash
+                    })
+                }
+
+    
+            });
+
+
+          (function(d,t) {
+              var BASE_URL = 'https://chat.suparat.net';
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+              window.chatwootSDK.run({
+                websiteToken: 'Qw7HBV9QsYfWP4kNqfh9Pwyu',
+                  baseUrl: BASE_URL
+              })
+            }
+            })(document, "script");
+ 
+
+   $(document).ready(function() {
+      $(".plus-icon").click(function() {
+        $(".floating-menu").toggleClass("active"); 
+      });
+
+       $(".chat-by-line").click(function () {
+           location.href = "https://line.me/R/ti/p/@suparat";
+           $(".floating-menu").toggleClass("active"); 
+       });
+
+       $(".chat-by-web").click(function () {
+           window.$chatwoot.toggle("open");
+           $(".floating-menu").toggleClass("active"); 
+       });
+
+    });
+</script>
+
+
+    
+
+
+<script src="/pssretail/lib/jquery-validation/jquery.validate.min.js"></script>
+<script src="/pssretail/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="/pssretail/js/Scc/FormHelper.js?v=NwaNT625LegGyF72tRnpnKS7-VQhi96UBkRWqyeDE-4"></script>
+    <script src="/pssretail/js/Scc/SccLoadingModal.js?v=bAen5ZNG3HUF3Cuo-r1YHP_4g3Bgq7Hsm-Hs4g2QQuE"></script>
+    <script src="/pssretail/lib/image-map-resizer/js/imageMapResizer.min.js?v=K-CbjlqVUqp_ddRZG5NWoMQ0fPW-c01R5rJ9mm-0j88"></script>
+    <script src="/pssretail/lib/jquery-maphilight/jquery.maphilight.min.js?v=IdLjt26NELU46G3KmKpDcPXZc9wbzDvHZRAUdZkPgBM"></script>
+    <script src="/pssretail/js/Lookup/_PopupModelParts.js?v=k7gVkOht-yfFMqbGvaKuNzLWyKSKZp5iInBDBWjtHs4"></script>
+    <script src="/pssretail/js/Cart/Cart.js?v=8f-nNxXi9Po5m-MKDuup7w8I64ieXvzY6-e2ajX2K8E"></script>
+    <script src="/pssretail/js/Cart/CartItem.js?v=AVLr9FnH56l_5syAunTDnq0BnNEBrJrvt0plDzAjBYQ"></script>
+    <script src="/pssretail/lib/bootstrap-4-autocomplete/dist/bootstrap-4-autocomplete.min.js?v=Gm6embabYN2qugrh2DoZDGYzLyAVhOxFUTuqE3Rzz9s"></script>
+
+    <script type="text/javascript">
+
+        $('.nav-tabs').on('shown.bs.tab', MapResize);
+
+        function MapResize() {
+
+            $('#partImage').maphilight({
+                stroke: false,
+                fillColor: '00ff00',
+                fillOpacity: 0.3
+            });
+            $("#part-map").imageMapResize();
+            // need to call maphilight again to update hilight
+            $('#partImage').maphilight({
+                stroke: false,
+                fillColor: '00ff00',
+                fillOpacity: 0.3
+            });
+
+
+            $('#Color-image').maphilight({
+                stroke: false,
+                fillColor: '00ff00',
+                fillOpacity: 0.3
+            });
+            $("#Color-part-map").imageMapResize();
+            // need to call maphilight again to update hilight
+            $('#Color-image').maphilight({
+                stroke: false,
+                fillColor: '00ff00',
+                fillOpacity: 0.3
+            });
+
+        }
+
+        // detect windows resizing and handle grid resize //
+        var rtime;
+        var timeout = false;
+        var delta = 200;
+        var windowWidth = $(window).width();
+        $(window).resize(function () {
+            rtime = new Date();
+            if (timeout === false) {
+                timeout = true;
+                setTimeout(resizeend, delta);
+
+            }
+        });
+
+        function resizeend() {
+            if (new Date() - rtime < delta) {
+                setTimeout(resizeend, delta);
+            } else {
+                timeout = false;
+                if ($(window).width() != windowWidth) {
+                    CartItem.ResizeCartItemGrid(false);
+                    windowWidth = $(window).width();
+                }
+                MapResize();
+            }
+        }
+
+        function ShowProImage(e) {
+
+            $('#imagepreview').attr('src', BASEURL + e.dataset.propicturepathoriginal);
+            $('#ModalProductImages').modal('show');
+        }
+    </script>
+
+
+
+        <!-- Syncfusion Essential JS 2 ScriptManager -->
+        <script>window.syncfusion={isLicValidated:true};new ejs.grids.Grid({
+  "allowPaging": true,
+  "allowSorting": true,
+  "columns": [
+    {
+      "commands": [
+        {
+          "type": "plus",
+          "buttonOption": {
+            "iconCss": "fas fa-shopping-basket plus-button",
+            "cssClass": "e-flat plus-button bg-light border border-primary text-primary"
+          }
+        }
+      ],
+      "width": "70"
+    },
+    {
+      "field": "PART_NO",
+      "headerText": "รหัสสินค้า",
+      "isPrimaryKey": true,
+      "width": "150"
+    },
+    {
+      "field": "PART_NAME",
+      "headerText": "ชื่อสินค้า",
+      "width": "150"
+    },
+    {
+      "template": "#PartImgColTemplate",
+      "width": "50"
+    },
+    {
+      "field": "QTY_USE",
+      "format": "n0",
+      "headerText": "จำนวน",
+      "textAlign": "Right",
+      "width": "70"
+    },
+    {
+      "field": "PRICE",
+      "format": "n2",
+      "headerText": "ราคา",
+      "textAlign": "Right",
+      "width": "100"
+    },
+    {
+      "field": "PRO_STATUS",
+      "headerText": "",
+      "width": "50"
+    }
+  ],
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "pageSettings": {
+    "currentPage": 1.0,
+    "pageCount": 7.0,
+    "pageSize": 10.0
+  },
+  "selectedRowIndex": -1.0,
+  "created": Cart.commandClick,
+  "queryCellInfo": Cart.querycellinfo
+}).appendTo("#PartListGrid"); 
+new ejs.grids.Grid({
+  "allowPaging": true,
+  "allowSorting": true,
+  "columns": [
+    {
+      "commands": [
+        {
+          "type": "plus",
+          "buttonOption": {
+            "iconCss": "fas fa-shopping-basket plus-button",
+            "cssClass": "e-flat plus-button bg-light border border-primary text-primary"
+          }
+        }
+      ],
+      "customAttributes": {
+        "class": "px-0"
+      },
+      "textAlign": "Center",
+      "width": "70"
+    },
+    {
+      "field": "PART_NO",
+      "headerText": "รหัสสินค้า",
+      "isPrimaryKey": true,
+      "width": "150"
+    },
+    {
+      "field": "PART_NAME",
+      "headerText": "ชื่อสินค้า",
+      "width": "150"
+    },
+    {
+      "template": "#PartImgColTemplate",
+      "width": "50"
+    },
+    {
+      "allowSorting": false,
+      "field": "QTY_USE",
+      "format": "n0",
+      "headerText": "จำนวน",
+      "textAlign": "Right",
+      "width": "70"
+    },
+    {
+      "allowSorting": false,
+      "field": "PRICE",
+      "format": "n2",
+      "headerText": "ราคา",
+      "textAlign": "Right",
+      "width": "100"
+    },
+    {
+      "allowSorting": false,
+      "field": "PRO_STATUS",
+      "headerText": "",
+      "width": "40"
+    }
+  ],
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "pageSettings": {
+    "currentPage": 1.0,
+    "pageCount": 7.0,
+    "pageSize": 10.0
+  },
+  "selectedRowIndex": -1.0,
+  "created": Cart.ModelPartcommandClick
+}).appendTo("#ModelPartListGrid"); 
+new ejs.grids.Grid({
+  "allowSorting": true,
+  "allowTextWrap": true,
+  "columns": [
+    {
+      "headerText": "",
+      "type": "checkbox",
+      "visible": false,
+      "width": "40"
+    },
+    {
+      "headerText": "รายการสินค้า",
+      "hideAtMedia": "(max-width: 550px)",
+      "template": "#cartRowTemplate"
+    },
+    {
+      "field": "PART_NO",
+      "headerText": "สินค้า",
+      "hideAtMedia": "(min-width: 551px)",
+      "isPrimaryKey": true,
+      "template": "#PartNameTemplate",
+      "width": "140"
+    },
+    {
+      "field": "PRICE",
+      "format": "n2",
+      "headerText": "ราคาขาย",
+      "hideAtMedia": "(min-width: 551px)",
+      "template": "#PriceColTemplate",
+      "textAlign": "Right",
+      "width": "100"
+    },
+    {
+      "field": "PRO_STATUS",
+      "headerText": "",
+      "hideAtMedia": "(min-width: 551px)",
+      "template": "#proColTemplate",
+      "textAlign": "Right",
+      "width": "60"
+    },
+    {
+      "headerText": "",
+      "hideAtMedia": "(min-width: 551px)",
+      "template": "#QtyShowColTemplate",
+      "textAlign": "Center",
+      "width": "55"
+    },
+    {
+      "field": "TOTAL_QTY",
+      "format": "n0",
+      "headerText": "จำนวน",
+      "hideAtMedia": "(min-width: 551px)",
+      "template": "#qtyColTemplate",
+      "textAlign": "Center",
+      "width": "100"
+    },
+    {
+      "field": "TOTAL_AMOUNT",
+      "format": "n2",
+      "headerText": "ยอดรวม",
+      "hideAtMedia": "(min-width: 551px)",
+      "textAlign": "Right",
+      "width": "110"
+    },
+    {
+      "headerText": "",
+      "hideAtMedia": "(min-width: 551px)",
+      "template": "#actionColTemplate",
+      "textAlign": "Right",
+      "width": "50"
+    },
+    {
+      "field": "RECORD_DATE",
+      "headerText": "",
+      "visible": false
+    }
+  ],
+  "dataSource": ejs.data.DataUtil.parse.isJson([]),
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "selectedRowIndex": -1.0,
+  "selectionSettings": {
+    "checkboxOnly": true,
+    "persistSelection": true
+  },
+  "sortSettings": {
+    "columns": [
+      {
+        "field": "RECORD_DATE",
+        "direction": "Descending"
+      }
+    ]
+  },
+  "width": "100%",
+  "actionBegin": CartItem.actionBegin,
+  "actionComplete": CartItem.actionComplete,
+  "created": CartItem.Created,
+  "dataBound": CartItem.DataBound,
+  "rowSelecting": CartItem.rowSelecting
+}).appendTo("#CartItemListGrid"); 
+new ejs.grids.Grid({
+  "allowPaging": true,
+  "allowSorting": true,
+  "columns": [
+    {
+      "commands": [
+        {
+          "type": "plus",
+          "buttonOption": {
+            "iconCss": "fas fa-shopping-basket plus-button",
+            "cssClass": "e-flat plus-button bg-light border border-primary text-primary"
+          }
+        }
+      ],
+      "width": "60"
+    },
+    {
+      "field": "PICTURE_ID",
+      "headerText": "No.",
+      "textAlign": "Right",
+      "width": "50"
+    },
+    {
+      "field": "PART_NO",
+      "headerText": "รหัสอะไหล่",
+      "isPrimaryKey": true,
+      "width": "150"
+    },
+    {
+      "field": "PART_NAME",
+      "headerText": "ชื่ออะไหล่",
+      "width": "150"
+    },
+    {
+      "field": "QTY_USE",
+      "format": "n0",
+      "headerText": "Qty",
+      "textAlign": "Right",
+      "width": "50"
+    },
+    {
+      "field": "PRICE",
+      "format": "n2",
+      "headerText": "ราคา",
+      "textAlign": "Right",
+      "width": "100"
+    },
+    {
+      "field": "PRO_STATUS",
+      "headerText": "",
+      "width": "50"
+    }
+  ],
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "selectedRowIndex": -1.0,
+  "width": "100%",
+  "created": Cart.ChoicePartcommandClick,
+  "queryCellInfo": Cart.querycellinfo
+}).appendTo("#ChoicePartPicGrid"); 
+new ejs.grids.Grid({
+  "allowPaging": true,
+  "allowSorting": true,
+  "columns": [
+    {
+      "commands": [
+        {
+          "type": "plus",
+          "buttonOption": {
+            "iconCss": "fas fa-shopping-basket plus-button",
+            "cssClass": "e-flat plus-button bg-light border border-primary text-primary"
+          }
+        }
+      ],
+      "width": "70"
+    },
+    {
+      "field": "PICTURE_ID",
+      "headerText": "ลำดับ",
+      "textAlign": "Right",
+      "width": "60"
+    },
+    {
+      "field": "PART_NO",
+      "headerText": "รหัสอะไหล่",
+      "isPrimaryKey": true,
+      "width": "150"
+    },
+    {
+      "field": "PART_NAME",
+      "headerText": "ชื่ออะไหล่",
+      "width": "150"
+    },
+    {
+      "field": "QTY_USE",
+      "format": "n0",
+      "headerText": "Qty",
+      "textAlign": "Right",
+      "width": "50"
+    },
+    {
+      "field": "PRICE",
+      "format": "n2",
+      "headerText": "ราคา",
+      "textAlign": "Right",
+      "width": "100"
+    },
+    {
+      "field": "PRO_STATUS",
+      "headerText": "",
+      "width": "50"
+    }
+  ],
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "selectedRowIndex": -1.0,
+  "width": "100%",
+  "created": Cart.SlectPartcommandClick,
+  "queryCellInfo": Cart.querycellinfo
+}).appendTo("#PartPicListGrid"); 
+new ejs.grids.Grid({
+  "allowPaging": true,
+  "allowSorting": true,
+  "columns": [
+    {
+      "commands": [
+        {
+          "type": "plus",
+          "buttonOption": {
+            "iconCss": "fas fa-shopping-basket plus-button",
+            "cssClass": "e-flat plus-button bg-light border border-primary text-primary"
+          }
+        }
+      ],
+      "width": "60"
+    },
+    {
+      "field": "PICTURE_ID",
+      "headerText": "ลำดับ",
+      "textAlign": "Right",
+      "width": "50"
+    },
+    {
+      "field": "PART_NO",
+      "headerText": "รหัสอะไหล่",
+      "isPrimaryKey": true,
+      "width": "150"
+    },
+    {
+      "field": "PART_NAME",
+      "headerText": "ชื่ออะไหล่",
+      "width": "150"
+    },
+    {
+      "field": "QTY_USE",
+      "format": "n0",
+      "headerText": "Qty",
+      "textAlign": "Right",
+      "width": "50"
+    },
+    {
+      "field": "PRICE",
+      "format": "n2",
+      "headerText": "ราคา",
+      "textAlign": "Right",
+      "width": "100"
+    },
+    {
+      "field": "PRO_STATUS",
+      "headerText": "",
+      "width": "50"
+    }
+  ],
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "selectedRowIndex": -1.0,
+  "width": "100%",
+  "created": Cart.SlectPartColorcommandClick,
+  "queryCellInfo": Cart.querycellinfo
+}).appendTo("#PartPicColorListGrid"); 
+new ejs.grids.Grid({
+  "allowPaging": true,
+  "allowSorting": true,
+  "columns": [
+    {
+      "commands": [
+        {
+          "type": "plus",
+          "buttonOption": {
+            "iconCss": "fas fa-image plus-button",
+            "cssClass": "e-flat plus-button bg-light border border-primary text-primary"
+          }
+        }
+      ],
+      "width": "65"
+    },
+    {
+      "field": "MODEL_MARKET_NAME",
+      "headerText": "ชื่อรุ่นรถ",
+      "width": "200"
+    },
+    {
+      "field": "MODEL_YEAR",
+      "headerText": "ปีรถ",
+      "width": "70"
+    },
+    {
+      "field": "ImageTypeDesc",
+      "headerText": "ชนิดรูป",
+      "width": "100"
+    }
+  ],
+  "frozenColumns": 0.0,
+  "frozenRows": 0.0,
+  "pageSettings": {
+    "currentPage": 1.0,
+    "pageCount": 7.0,
+    "pageSize": 10.0
+  },
+  "selectedRowIndex": -1.0,
+  "width": "100%"
+}).appendTo("#Lookup_ModelParts_Grid"); 
+</script>
+
+
+        <script type="module" src="/pssretail/js/cookieconsent-config.js?v=vF0a9ot_5yB-tEtTOnJvug7BViWD6tWuuJuqM3YckeI"></script>
+        <script>
+        document.getElementById("cwc-link").addEventListener("click", function() {
+            CookieConsent.showPreferences();
+        });
+        </script>
+
+</body>
+</html>
